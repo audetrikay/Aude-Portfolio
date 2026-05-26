@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio — Aude</title>
+
+    <!-- Typographie Anton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-header">
+        <div class="header-left">Aude — Portfolio</div>
+
+        <nav class="main-nav">
+            <a href="#accueil" data-i18n="nav.home">Accueil</a>
+
+            <div class="nav-item project-menu">
+                <a href="#projets" data-i18n="nav.projects">Projets</a>
+
+                <div class="mega-menu">
+                    <div class="mega-column">
+                        <h3 data-i18n="menu.school">École</h3>
+                        <a href="pages/ocean-imprints.html">Ocean Imprints</a>
+                        <a href="pages/hma.html">How to Make Almost Anything</a>
+                        <a href="pages/projet-pix.html">Projet Pix</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3 data-i18n="menu.adventure">Aventure</h3>
+                        <a href="pages/veloute.html">Velouté</a>
+                        <a href="pages/mission-martinique.html">Martinique</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3 data-i18n="menu.creation">Création</h3>
+                        <a href="pages/photographie.html">Photographie</a>
+                        <a href="pages/surfboard.html">Surfboard</a>
+                        <a href="pages/orika-design.html">Orika</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item project-menu">
+                <a href="#parcours" data-i18n="nav.path">Parcours</a>
+
+                <div class="mega-menu parcours-mega-menu">
+                    <div class="mega-column">
+                        <h3>2019 — 2022</h3>
+                        <a href="#parcours" data-i18n="path.menu.1">Bac scientifique</a>
+                        <a href="#parcours" data-i18n="path.menu.2">Prépa intégrée</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3>2022 — 2025</h3>
+                        <a href="#parcours" data-i18n="path.menu.3">Cycle ingénieur</a>
+                        <a href="#parcours" data-i18n="path.menu.4">Creative Technology</a>
+                        <a href="#parcours" data-i18n="path.menu.5">Projets design & tech</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#apropos" data-i18n="nav.news">Actualité</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="language-menu-container">
+                <button class="language-logo-button" type="button" aria-label="Changer la langue">
+                    <img src="assets/images/langue.png" alt="">
+                </button>
+
+                <div class="language-menu">
+                    <button type="button" data-set-lang="fr">Français</button>
+                    <button type="button" data-set-lang="en">English</button>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- PAGE D'ACCUEIL -->
+    <main>
+
+        <!-- SECTION HERO -->
+        <section class="hero-section" id="accueil">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">portfolio</h1>
+            </div>
+
+            <div class="hero-image-band">
+                <div class="hero-photo-placeholder"></div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="about-editorial-section" id="about-me">
+            <div class="about-title">
+                <h2 data-i18n="about.title">Présentation</h2>
+            </div>
+
+
+
+            <div class="about-small-image">
+                <img src="assets/images/hero.jpeg" alt="Portrait secondaire de Aude">
+            </div>
+            <div class="about-text-block">
+                <p data-i18n="about.text.1">
+                    Je suis étudiante ingénieure en Creative Technology, entre design,
+                    ingénierie, création et expérimentation.
+                </p>
+
+                <p data-i18n="about.text.2">
+                    Mon parcours explore les liens entre objets, matière, usages et récit visuel.
+                    J’aime concevoir des projets qui mêlent approche technique, sensibilité esthétique
+                    et observation du réel.
+                </p>
+
+                <p data-i18n="about.text.3">
+                    L’art, la photographie et l’aventure occupent aussi une place importante dans
+                    ma démarche. Ils m’aident à transformer des lieux,
+                    des expériences et des détails du quotidien en projets sensibles et concrets.
+                </p>
+            </div>
+
+            <div class="about-large-image">
+                <img src="assets/images/hero.jpeg" alt="Portrait principal de Aude">
+            </div>
+
+        </section>
+
+
+        <!-- PHRASE -->
+        <section class="content-section phrase-section">
+            <h2 data-i18n="phrase.main">
+                Imaginer des objets, des systèmes et des expériences à la croisée de l’art,
+                de la technique et des usages humains.
+            </h2>
+        </section>
+
+        <!-- BOUTONS PROJETS -->
+        <section class="content-section" id="projets">
+            <p class="section-label" data-i18n="projects.label"> Projets</p>
+
+            <div class="project-grid">
+                <a href="pages/ocean-imprints.html" class="project-card">
+                    <span>01</span>
+                    <h3>Ocean Imprints</h3>
+                    <p data-i18n="category.school">École</p>
+                </a>
+
+                <a href="pages/photographie.html" class="project-card">
+                    <span>02</span>
+                    <h3>Photographie</h3>
+                    <p data-i18n="category.creation">Creation</p>
+                </a>
+
+                <a href="pages/veloute.html" class="project-card">
+                    <span>03</span>
+                    <h3>VeloutÉ</h3>
+                    <p data-i18n="category.adventure">Aventure</p>
+                </a>
+
+                <a href="pages/hma.html" class="project-card">
+                    <span>04</span>
+                    <h3>HMA</h3>
+                    <p data-i18n="category.school">École</p>
+                </a>
+
+                <a href="pages/mission-martinique.html" class="project-card">
+                    <span>05</span>
+                    <h3>Martinique</h3>
+                    <p data-i18n="category.adventure">Aventure</p>
+                </a>
+
+                <a href="pages/surfboard.html" class="project-card">
+                    <span>06</span>
+                    <h3>SurfBoard</h3>
+                    <p data-i18n="category.creation">Creation</p>
+                </a>
+
+                <a href="pages/projet-pix.html" class="project-card">
+                    <span>07</span>
+                    <h3>Projet Pix</h3>
+                    <p data-i18n="category.school">École</p>
+                </a>
+
+                <a href="pages/orika-design.html" class="project-card">
+                    <span>08</span>
+                    <h3>Orika</h3>
+                    <p data-i18n="category.creation">Creation</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- PARCOURS -->
+        <section class="content-section" id="parcours">
+            <p class="section-label" data-i18n="path.label">Parcours</p>
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <span class="timeline-number">01</span>
+                    <h3>2019 — 2022</h3>
+                    <h4 data-i18n="path.1.subtitle">Fondations</h4>
+                    <p data-i18n="path.1.text">
+                        Formation scientifique, acquisition des bases en mathématiques,
+                        physique et raisonnement technique.
+                    </p>
+                </div>
+
+                <div class="timeline-card">
+                    <span class="timeline-number">02</span>
+                    <h3>2022 — 2025</h3>
+                    <h4 data-i18n="path.2.subtitle">Cycle ingénieur</h4>
+                    <p data-i18n="path.2.text">
+                        Cycle ingénieur, projets interdisciplinaires, design, prototypage,
+                        programmation et innovation.
+                    </p>
+                </div>
+
+                <div class="timeline-card">
+                    <span class="timeline-number">03</span>
+                    <h3 data-i18n="path.3.title">2026 - Aujourd'hui</h3>
+                    <h4 data-i18n="path.3.subtitle">Exploration</h4>
+                    <p data-i18n="path.3.text">
+                        Stage, recherche appliquée, projets environnementaux,
+                        design expérimental et systèmes connectés.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTUALITÉ -->
+        <section class="news-editorial-section" id="apropos">
+            <div class="news-title">
+                <h2 data-i18n="news.title">découverte du moment</h2>
+            </div>
+
+            <div class="news-intro">
+                <h3 data-i18n="news.subtitle">ce que j’explore en Master 2</h3>
+                <div class="news-horizontal-arrow"></div>
+            </div>
+
+            <div class="news-text">
+                <p data-i18n="news.text.1">
+                    Cette année, mon projet d'école s'inscrit dans des situations concrètes
+                    et de besoins réels, pour imaginer des objets, systèmes et expériences
+                    à la fois techniques, sensibles et utiles.
+                </p>
+
+                <p data-i18n="news.text.2">
+                    compléter compléter compléter compléter compléter compléter compléter compléter
+                    compléter compléter compléter compléter compléter compléter compléter compléter
+                    compléter compléter compléter compléter
+                </p>
+            </div>
+
+            <div class="news-feature-image">
+                <img src="assets/images/hero.jpeg" alt="Image d’actualité du portfolio">
+            </div>
+        </section>
+
+
+
+
+
+        <!-- CONTACT -->
+        <section class="contact-info-section" id="contact">
+            <p class="section-label" data-i18n="contact.label">Contact</p>
+            <div class="contact-info-title">
+                <h2 data-i18n="contact.title">Info!</h2>
+            </div>
+            <div class="contact-photo-frame">
+                <div class="contact-shape contact-shape-left"></div>
+                <div class="contact-shape contact-shape-right"></div>
+                <img src="assets/images/hero.jpeg" alt="Portrait de contact">
+            </div>
+            <div class="contact-info-list">
+                <a href="mailto:audedesperies@icloud.com?subject=Contact%20depuis%20le%20portfolio"
+                    class="contact-info-row">
+                    <span class="contact-index">01</span>
+                    <div>
+                        <h3 data-i18n="contact.email">Email</h3>
+                        <p>audedesperies@icloud.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BtCOLMMIWT4GghlP7%2BjmmMA%3D%3D"
+                    class="contact-info-row" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-index">02</span>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p data-i18n="contact.linkedin.text">Profil professionnel</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/audetrikay/" class="contact-info-row" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="contact-index">03</span>
+                    <div>
+                        <h3>Instagram</h3>
+                        <p data-i18n="contact.instagram.text">Création & projets</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

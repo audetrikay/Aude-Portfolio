@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projet Pix — Portfolio Aude</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+    <div class="header-left">Aude — Portfolio</div>
+
+    <nav class="main-nav">
+      <a href="../index.html#accueil" data-i18n="nav.home">Accueil</a>
+
+      <div class="nav-item project-menu">
+        <a href="../index.html#projets" data-i18n="nav.projects">Projets</a>
+
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3 data-i18n="menu.school">École</h3>
+            <a href="ocean-imprints.html">Ocean Imprints</a>
+            <a href="hma.html">How to Make Almost Anything</a>
+            <a href="projet-pix.html">Projet Pix</a>
+          </div>
+
+          <div class="mega-column">
+            <h3 data-i18n="menu.adventure">Aventure</h3>
+            <a href="veloute.html">Velouté</a>
+            <a href="mission-martinique.html">Martinique</a>
+          </div>
+
+          <div class="mega-column">
+            <h3 data-i18n="menu.creation">Création</h3>
+            <a href="photographie.html">Photographie</a>
+            <a href="surfboard.html">Surfboard</a>
+            <a href="orika-design.html">Orika</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item project-menu">
+        <a href="../index.html#parcours" class="nav-button" data-i18n="nav.path">Parcours</a>
+
+        <div class="mega-menu parcours-mega-menu">
+          <div class="mega-column">
+            <h3>2019 — 2022</h3>
+            <a href="../index.html#parcours" data-i18n="path.menu.1">Bac scientifique</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.2">Prépa intégrée</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>2022 — 2025</h3>
+            <a href="../index.html#parcours" data-i18n="path.menu.3">Cycle ingénieur</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.4">Creative Technology</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.5">Projets design & tech</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="../index.html#apropos" data-i18n="nav.news">Actualité</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="language-menu-container">
+        <button class="language-logo-button" type="button" aria-label="Changer la langue">
+          <img src="../assets/images/langue.png" alt="">
+        </button>
+
+        <div class="language-menu">
+          <button type="button" data-set-lang="fr">Français</button>
+          <button type="button" data-set-lang="en">English</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-page pix-page">
+
+    <section class="project-detail-hero">
+
+      <div class="project-detail-topline">
+        <span data-i18n="pix.top.project">Projet 07</span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="project-detail-title">
+        <h1 data-i18n="pix.title">projet pix</h1>
+      </div>
+
+      <div class="project-detail-index">
+        <p class="project-manifesto">
+          <strong data-i18n="pix.subtitle.1">ingénierie embarquée</strong>
+          <strong data-i18n="pix.subtitle.2">×</strong>
+          <strong data-i18n="pix.subtitle.3">robotique expérimentale</strong>
+        </p>
+      </div>
+
+      <div class="project-detail-text">
+        <p data-i18n="pix.text.1">
+          Les Projets Pix sont des projets orientés vers la conception. Réalisés en groupe dans le cadre du
+          cursus d’ingénieur, PIX1 et PIX2 s’inscrivent dans une démarche pédagogique orientée projet, centrée sur
+          l’expérimentation et le prototypage. Encadrés par l’école, ils mobilisent des compétences transversales en
+          mécanique, électronique et programmation.
+        </p>
+
+        <p data-i18n="pix.text.2">
+          En se confrontant à des contraintes réelles : coordination d’équipe, gestion du temps, répartition des tâches
+          et résolution de problèmes techniques, ces projets constituent un terrain d’apprentissage concret, où la théorie est mise à
+          l’épreuve du réel à travers des cycles d’itération, de test et d’amélioration continue.
+        </p>
+      </div>
+
+      <div class="project-detail-image">
+        <img src="../assets/images/hero.jpeg" alt="Projet Pix">
+      </div>
+
+    </section>
+
+    <section class="project-detail-gallery">
+
+      <article class="project-mini-card">
+        <img src="../assets/images/hero.jpeg" alt="Projet PIX 1 ornithoptère">
+        <div>
+          <span>01</span>
+          <h3 data-i18n="pix.card.1.title">PIX 1</h3>
+          <p data-i18n="pix.card.1.text">
+            Conception d’un ornithoptère inspiré du vol des oiseaux, combinant mécanismes articulés et contrôle embarqué
+            pour reproduire une portance naturelle. Le projet s’appuie sur une approche expérimentale mêlant
+            biomimétisme et itérations pour améliorer stabilité et performance.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <img src="../assets/images/hero.jpeg" alt="Projet PIX 2 robot quadrupède">
+        <div>
+          <span>02</span>
+          <h3 data-i18n="pix.card.2.title">PIX 2</h3>
+          <p data-i18n="pix.card.2.text">
+            PIX2 est un projet de robot quadrupède autonome, conçu pour réaliser des tâches spécifiques sans connexion
+            Internet, grâce à une communication locale entre microcontrôleurs. Basé sur Arduino et des capteurs, il
+            explore la mobilité, l’interaction et l’assistance, avec une attention particulière portée à l’originalité
+            du design et des usages.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <img src="../assets/images/hero.jpeg" alt="Apprentissages Projet Pix">
+        <div>
+          <span>03</span>
+          <h3 data-i18n="pix.card.3.title">Apprentissage</h3>
+          <p data-i18n="pix.card.3.text">
+            Ces projets m’ont permis de combiner mécanique, électronique et programmation, tout en apprenant à itérer
+            rapidement et à gérer les contraintes réelles d’un système autonome.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

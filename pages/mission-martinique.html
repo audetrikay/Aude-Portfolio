@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mission Martinique — Portfolio Aude</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+    <div class="header-left">Aude — Portfolio</div>
+
+    <nav class="main-nav">
+      <a href="../index.html#accueil" data-i18n="nav.home">Accueil</a>
+
+      <div class="nav-item project-menu">
+        <a href="../index.html#projets" data-i18n="nav.projects">Projets</a>
+
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3 data-i18n="menu.school">École</h3>
+            <a href="ocean-imprints.html">Ocean Imprints</a>
+            <a href="hma.html">How to Make Almost Anything</a>
+            <a href="projet-pix.html">Projet Pix</a>
+          </div>
+
+          <div class="mega-column">
+            <h3 data-i18n="menu.adventure">Aventure</h3>
+            <a href="veloute.html">Velouté</a>
+            <a href="mission-martinique.html">Martinique</a>
+          </div>
+
+          <div class="mega-column">
+            <h3 data-i18n="menu.creation">Création</h3>
+            <a href="photographie.html">Photographie</a>
+            <a href="surfboard.html">Surfboard</a>
+            <a href="orika-design.html">Orika</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item project-menu">
+        <a href="../index.html#parcours" class="nav-button" data-i18n="nav.path">Parcours</a>
+
+        <div class="mega-menu parcours-mega-menu">
+          <div class="mega-column">
+            <h3>2019 — 2022</h3>
+            <a href="../index.html#parcours" data-i18n="path.menu.1">Bac scientifique</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.2">Prépa intégrée</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>2022 — 2025</h3>
+            <a href="../index.html#parcours" data-i18n="path.menu.3">Cycle ingénieur</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.4">Creative Technology</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.5">Projets design & tech</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="../index.html#apropos" data-i18n="nav.news">Actualité</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="language-menu-container">
+        <button class="language-logo-button" type="button" aria-label="Changer la langue">
+          <img src="../assets/images/langue.png" alt="">
+        </button>
+
+        <div class="language-menu">
+          <button type="button" data-set-lang="fr">Français</button>
+          <button type="button" data-set-lang="en">English</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-page martinique-page">
+
+    <section class="project-detail-hero">
+
+      <div class="project-detail-topline">
+        <span data-i18n="martinique.top.project">Projet 05</span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="project-detail-title">
+        <h1 data-i18n="martinique.title">martinique</h1>
+      </div>
+
+      <div class="project-detail-index">
+        <p class="project-manifesto">
+          <strong data-i18n="martinique.subtitle.1">
+            Installation, réception et comparaison de données météo sur le terrain
+          </strong>
+        </p>
+      </div>
+
+      <div class="project-detail-text">
+        <p data-i18n="martinique.text.1">
+          Ma mission en Martinique est un projet de terrain mené autour de l’installation
+          et du suivi de capteurs météo au Lamentin. L’objectif était de mettre en
+          place un dispositif capable de capter, comparer et documenter différentes
+          mesures environnementales.
+        </p>
+
+        <p data-i18n="martinique.text.2">
+          Le travail a combiné conception mécanique, ajustements sur site,
+          réception radio, collecte de données et analyse comparative entre plusieurs
+          stations météo. Le projet s’est construit à partir de contraintes réelles :
+          météo tropicale, stabilité des supports, compatibilité du matériel et qualité
+          des données reçues.
+        </p>
+
+        <p data-i18n="martinique.text.3">
+          Cette mission a permis de relier prototypage, instrumentation, observation
+          de terrain et traitement de données dans une logique d’ingénierie appliquée.
+        </p>
+      </div>
+
+      <div class="project-detail-image">
+        <img src="../assets/images/hero.jpeg" alt="Mission Martinique capteurs météo">
+      </div>
+
+    </section>
+
+    <section class="project-detail-gallery">
+
+      <article class="project-mini-card">
+        <img src="../assets/images/hero.jpeg" alt="Installation capteurs météo">
+        <div>
+          <span>01</span>
+          <h3 data-i18n="martinique.card.1.title">Installation</h3>
+          <p data-i18n="martinique.card.1.text">
+            Installation des stations météo, ajustement du trépied et stabilisation du dispositif.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <img src="../assets/images/hero.jpeg" alt="Réception radio RTL SDR">
+        <div>
+          <span>02</span>
+          <h3 data-i18n="martinique.card.2.title">Signal</h3>
+          <p data-i18n="martinique.card.2.text">
+            Réception des données avec antenne ADS-B, clé RTL-SDR et exploration des signaux capteurs.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <img src="../assets/images/hero.jpeg" alt="Analyse des données météo">
+        <div>
+          <span>03</span>
+          <h3 data-i18n="martinique.card.3.title">Données</h3>
+          <p data-i18n="martinique.card.3.text">
+            Comparaison des mesures entre stations et identification des écarts de température, pluie et vent.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
