@@ -1406,5 +1406,5 @@ a {
 .project-mini-image:hover img,
 .project-mini-card:hover img {
   transform: scale(1.08);
-  filter: grayscale(0%) contrast(1.05);
+  filter: grayscale(0%) contrast(1.05) !important;
 }
