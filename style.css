@@ -1388,3 +1388,23 @@ a {
     min-height: 280px;
   }
 }
+
+/* =========================================================
+   HOVER COULEUR IMAGES — PRIORITAIRE
+========================================================= */
+
+.photo-item img,
+.project-detail-image img,
+.project-mini-image img,
+.project-mini-card img {
+  filter: grayscale(100%) contrast(1.05);
+  transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.photo-item:hover img,
+.project-detail-image:hover img,
+.project-mini-image:hover img,
+.project-mini-card:hover img {
+  transform: scale(1.08);
+  filter: grayscale(0%) contrast(1.05);
+}
