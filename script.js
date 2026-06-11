@@ -51,7 +51,7 @@ const translations = {
     "contact.instagram.text": "Création & projets",
 
     "hma.title": "how to make anything",
-    "hma.subtitle.1": "prototypage électronique",
+    "hma.subtitle.1": "prototypage electronique",
     "hma.subtitle.2": "×",
     "hma.subtitle.3": "expérimentation vidéo",
     "hma.text.1": "HMA (How to Make Almost Anything) était un cours pour apprendre par la fabrication, tester rapidement, documenter les erreurs et transformer une idée technique en prototype fonctionnel.",
