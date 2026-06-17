@@ -341,3 +341,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const portfolioButton = document.querySelector(".mobile-portfolio-button");
+  const portfolioMenu = document.querySelector(".mobile-portfolio-menu");
+
+  if (!portfolioButton || !portfolioMenu) return;
+
+  const closePortfolioMenu = () => {
+    portfolioMenu.classList.remove("open");
+    portfolioButton.setAttribute("aria-expanded", "false");
+  };
+
+  portfolioButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    const isOpen = portfolioMenu.classList.toggle("open");
+    portfolioButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  portfolioMenu.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  portfolioMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closePortfolioMenu);
+  });
+
+  document.addEventListener("click", closePortfolioMenu);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closePortfolioMenu();
+    }
+  });
+});

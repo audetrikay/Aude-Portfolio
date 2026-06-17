@@ -21,30 +21,58 @@
 <body>
 
   <!-- HEADER -->
+  <!-- HEADER -->
   <header class="top-header">
-    <div class="header-left">Aude — Portfolio</div>
+
+    <div class="header-left mobile-portfolio-zone">
+      <span class="desktop-portfolio-text">Aude — Portfolio</span>
+
+      <button class="mobile-portfolio-button" type="button" aria-expanded="false" aria-controls="mobilePortfolioMenu">
+        Aude — Portfolio
+      </button>
+
+      <div class="mobile-portfolio-menu" id="mobilePortfolioMenu">
+        <a href="../index.html#accueil" class="mobile-menu-home">Portfolio / Accueil</a>
+
+        <span>Projets</span>
+        <a href="ocean-imprints.html">Ocean Imprints</a>
+        <a href="hma.html">How to Make Almost Anything</a>
+        <a href="projet-pix.html">Projet Pix</a>
+        <a href="veloute.html">Velouté</a>
+        <a href="mission-martinique.html">Martinique</a>
+        <a href="photographie.html">Photographie</a>
+        <a href="surfboard.html">Surfboard</a>
+        <a href="orika-design.html">Orika</a>
+
+        <span>Navigation</span>
+        <a href="../index.html#parcours">Parcours</a>
+        <a href="../index.html#apropos">Actualité</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
 
     <nav class="main-nav">
-      <a href="../index.html#accueil">Accueil</a>
+      <a href="../index.html#accueil" data-i18n="nav.home">Accueil</a>
 
       <div class="nav-item project-menu">
-        <a href="../index.html#projets">projets</a>
+        <a href="../index.html#projets" data-i18n="nav.projects">Projets</a>
+
         <div class="mega-menu">
           <div class="mega-column">
-            <h3>École</h3>
+            <h3 data-i18n="menu.school">École</h3>
             <a href="ocean-imprints.html">Ocean Imprints</a>
-            <a href="hma.html">How to make almost anything</a>
+            <a href="hma.html">How to Make Almost Anything</a>
             <a href="projet-pix.html">Projet Pix</a>
           </div>
 
           <div class="mega-column">
-            <h3>Aventure</h3>
+            <h3 data-i18n="menu.adventure">Aventure</h3>
             <a href="veloute.html">Velouté</a>
             <a href="mission-martinique.html">Martinique</a>
           </div>
 
           <div class="mega-column">
-            <h3>Création</h3>
+            <h3 data-i18n="menu.creation">Création</h3>
             <a href="photographie.html">Photographie</a>
             <a href="surfboard.html">Surfboard</a>
             <a href="orika-design.html">Orika</a>
@@ -53,25 +81,26 @@
       </div>
 
       <div class="nav-item project-menu">
-        <a href="../index.html#parcours" class="nav-button">Parcours</a>
+        <a href="../index.html#parcours" class="nav-button" data-i18n="nav.path">Parcours</a>
 
         <div class="mega-menu parcours-mega-menu">
           <div class="mega-column">
             <h3>2019 — 2022</h3>
-            <a href="../index.html#parcours">Bac scientifique</a>
-            <a href="../index.html#parcours">Prépa intégrée</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.1">Bac scientifique</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.2">Prépa intégrée</a>
           </div>
 
           <div class="mega-column">
             <h3>2022 — 2025</h3>
-            <a href="../index.html#parcours">Cycle ingénieur</a>
-            <a href="../index.html#parcours">Creative Technology</a>
-            <a href="../index.html#parcours">Projets design & tech</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.3">Cycle ingénieur</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.4">Creative Technology</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.5">Projets design & tech</a>
           </div>
         </div>
       </div>
-      <a href="../index.html#apropos">Actualité</a>
-      <a href="../index.html#contact">Contact</a>
+
+      <a href="../index.html#apropos" data-i18n="nav.news">Actualité</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="header-right">
@@ -86,6 +115,7 @@
         </div>
       </div>
     </div>
+
   </header>
 
   <main class="photo-page">
@@ -228,23 +258,23 @@
           <img src="../assets/images/photo-30.jpeg" alt="Photographie 30">
         </article>
 
-         <article class="photo-item photo-vertical">
+        <article class="photo-item photo-vertical">
           <img src="../assets/images/photo-31.jpeg" alt="Photographie 31">
         </article>
 
-         <article class="photo-item photo-vertical">
+        <article class="photo-item photo-vertical">
           <img src="../assets/images/photo-32.jpeg" alt="Photographie 32">
         </article>
 
-         <article class="photo-item photo-vertical">
+        <article class="photo-item photo-vertical">
           <img src="../assets/images/photo-33.jpeg" alt="Photographie 33">
         </article>
 
-         <article class="photo-item photo-vertical">
+        <article class="photo-item photo-vertical">
           <img src="../assets/images/photo-34.jpeg" alt="Photographie 34">
         </article>
 
-         <article class="photo-item photo-vertical">
+        <article class="photo-item photo-vertical">
           <img src="../assets/images/photo-35.jpeg" alt="Photographie 35">
         </article>
 
