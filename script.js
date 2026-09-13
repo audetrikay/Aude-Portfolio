@@ -144,16 +144,18 @@ const translations = {
 
     "martinique.top.project": "Projet 05",
     "martinique.title": "martinique",
-    "martinique.subtitle.1": "Installation, réception et comparaison de données météo sur le terrain",
-    "martinique.text.1": "Ma mission en Martinique est un projet de terrain mené autour de l’installation et du suivi de capteurs météo au Lamentin. L’objectif était de mettre en place un dispositif capable de capter, comparer et documenter différentes mesures environnementales.",
-    "martinique.text.2": "Le travail a combiné conception mécanique, ajustements sur site, réception radio, collecte de données et analyse comparative entre plusieurs stations météo. Le projet s’est construit à partir de contraintes réelles : météo tropicale, stabilité des supports, compatibilité du matériel et qualité des données reçues.",
-    "martinique.text.3": "Cette mission a permis de relier prototypage, instrumentation, observation de terrain et traitement de données dans une logique d’ingénierie appliquée.",
-    "martinique.card.1.title": "Installation",
-    "martinique.card.1.text": "Installation des stations météo, ajustement du trépied et stabilisation du dispositif.",
-    "martinique.card.2.title": "Signal",
-    "martinique.card.2.text": "Réception des données avec antenne ADS-B, clé RTL-SDR et exploration des signaux capteurs.",
-    "martinique.card.3.title": "Données",
-    "martinique.card.3.text": "Comparaison des mesures entre stations et identification des écarts de température, pluie et vent."
+    "martinique.subtitle.1": "Technologie",
+    "martinique.subtitle.2": "×",
+    "martinique.subtitle.3": "Resilience territoriale",
+    "martinique.text.1": "Pendant quatre mois en Martinique, j’ai participé au développement de solutions technologiques pour accompagner la Ville du Lamentin dans sa stratégie de résilience territoriale. À partir des besoins exprimés par la collectivité, nous avons travaillé sur la collecte et la fiabilisation de données météorologiques, leur transformation en informations accessibles, ainsi que sur la conception de prototypes adaptés au territoire.",
+    "martinique.text.2": "Entre IoT, analyse de données, développement web, électronique et fabrication 3D, ce projet reposait sur une démarche très expérimentale : observer un besoin sur le terrain, proposer une solution, la prototyper, la tester puis l’améliorer. Les contraintes de coût, d’autonomie énergétique, de disponibilité du matériel et de maintenance ont également conduit à privilégier des solutions simples, frugales et reproductibles.",
+    "martinique.card.1.title": "Mesurer & Fiabiliser",
+    "martinique.card.1.text": "Installation et comparaison de plusieurs technologies météorologiques, puis développement d’outils Python pour nettoyer, synchroniser et évaluer la fiabilité des données collectées.",
+    "martinique.card.2.title": "Analyser & Visualiser",
+    "martinique.card.2.text": "Conception d’un observatoire météorologique web transformant les mesures en graphiques, indicateurs et bulletins afin de rendre les données compréhensibles et exploitables par la collectivité la collectivité que nous avons rencontrée lors d'une réunion municipale pour présenter les travaux réalisés durant notre stage",
+    "project.link.web": "→ Voir le site web de l'observatoire météorologique",
+    "martinique.card.3.title": "Prototyper & Autonomiser",
+    "martinique.card.3.text": "Développement de solutions autonomes adaptées au terrain : station météorologique solaire, conception et impression 3D de pièces spécifiques et prototype d’éclairage pour la signalisation d’évacuation tsunami."
   },
 
   en: {
@@ -295,17 +297,19 @@ const translations = {
     "orika.kickstarter.link": "→ View the full Kickstarter campaign", 
 
     "martinique.top.project": "Project 05",
-"martinique.title": "martinique",
-"martinique.subtitle.1": "Installation, reception and comparison of weather data in the field",
-"martinique.text.1": "My mission in Martinique was a field project focused on the installation and monitoring of weather sensors in Le Lamentin. The goal was to set up a system able to capture, compare and document different environmental measurements.",
-"martinique.text.2": "The work combined mechanical design, on-site adjustments, radio reception, data collection and comparative analysis between several weather stations. The project was built around real constraints: tropical weather, support stability, hardware compatibility and the quality of the received data.",
-"martinique.text.3": "This mission connected prototyping, instrumentation, field observation and data processing within an applied engineering approach.",
-"martinique.card.1.title": "Setup",
-"martinique.card.1.text": "Installation of weather stations, tripod adjustment and stabilization of the system.",
-"martinique.card.2.title": "Signal",
-"martinique.card.2.text": "Data reception using an ADS-B antenna, an RTL-SDR dongle and exploration of sensor signals.",
-"martinique.card.3.title": "Data",
-"martinique.card.3.text": "Comparison of measurements between stations and identification of temperature, rainfall and wind differences."
+    "martinique.title": "martinique", 
+    "martinique.subtitle.1": "Technology",
+    "martinique.subtitle.2": "×",
+    "martinique.subtitle.3": "Territorial Resilience",
+    "martinique.text.1": "During my four-month internship in Martinique, I contributed to the development of technological solutions supporting the City of Le Lamentin’s territorial resilience strategy. Based on needs identified by the local authority, we worked on collecting and validating weather data, transforming it into accessible information, and designing prototypes adapted to local conditions.",
+    "martinique.text.2": "Combining IoT, data analysis, web development, electronics, and 3D fabrication, the project followed a highly experimental approach: identifying a field need, proposing a solution, prototyping it, testing it, and improving it. Constraints such as cost, energy autonomy, equipment availability, and maintenance also led us to prioritize simple, low-tech, and reproducible solutions.",
+    "martinique.card.1.title": "Measure & Validate",
+    "martinique.card.1.text": "Installation and comparison of several weather monitoring technologies, followed by the development of Python tools to clean, synchronize, and assess the reliability of collected data.",
+    "martinique.card.2.title": "Analyze & Visualize",
+    "martinique.card.2.text": "Development of a web-based weather observatory transforming measurements into graphs, indicators, and reports to make data understandable and useful for the local authority we met during a municipal meeting to present the work carried out during our project",
+    "project.link.web": "→ Visit the weather observatory's website.",
+    "martinique.card.3.title": "Prototype & Make Autonomous",
+    "martinique.card.3.text": "Development of autonomous solutions adapted to local conditions, including a solar-powered weather station, custom 3D-designed and printed parts, and an autonomous lighting prototype for tsunami evacuation signage."
   }
 };
 
