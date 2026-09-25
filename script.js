@@ -41,8 +41,8 @@ const translations = {
 
     "news.title": "découverte du moment",
     "news.subtitle": "ce que j’explore en Master 2",
-    "news.text.1": "Cette année, mon projet d’école s’inscrit dans des situations concrètes et des besoins réels, pour imaginer des objets, systèmes et expériences à la fois techniques, sensibles et utiles.",
-    "news.text.2": "a compléter",
+    "news.text.1": "GhostHatch explore un système mécanique passif conçu pour rendre les casiers de pêche inoffensifs lorsqu’ils sont perdus et ainsi limiter la pêche fantôme.",
+    "news.text.2": "Le projet utilise la remontée normale du casier comme une preuve mécanique d’utilisation : tant qu’il est utilisé, le mécanisme se réarme ; lorsqu’il est abandonné, une trappe d’échappement finit par s’ouvrir.",
 
     "contact.label": "CONTACT",
     "contact.title": "Info!",
@@ -200,8 +200,8 @@ const translations = {
 
     "news.title": "current focus",
     "news.subtitle": "what I am exploring in master 2",
-    "news.text.1": "This year, my school project starts from concrete situations and real needs, in order to imagine objects, systems and experiences that are technical, sensitive and useful.",
-    "news.text.2": "to complete",
+    "news.text.1": "GhostHatch explores a passive mechanical system designed to make lost fishing traps harmless, thereby reducing ghost fishing.",
+    "news.text.2": "The project uses normal trap retrieval as mechanical proof of use: while the trap remains active, the mechanism resets; when it is abandoned, an escape panel eventually opens.",
 
     "contact.label": "CONTACT",
     "contact.title": "Info!",
