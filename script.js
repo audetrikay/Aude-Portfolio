@@ -1,5 +1,29 @@
 const translations = {
   fr: {
+        "a11y.skip": "Passer au contenu principal",
+    "theme.toggle.day": "Mode jour actif (cliquer pour passer en mode nuit)",
+    "theme.toggle.night": "Mode nuit actif (cliquer pour passer en mode jour)",
+    "nav.cv": "CV",
+    "nav.cv.full": "Télécharger mon CV (PDF)",
+    "path.modal.open": "Détails",
+    "path.modal.close": "Fermer ✕",
+
+    "path.1.sub.1.title": "Bac scientifique",
+    "path.1.sub.1.detail": "Spécialité Mathématiques & Physique-Chimie. Mention Très Bien. Première approche de la démarche scientifique et d’investigation expérimentale.",
+    "path.1.sub.2.title": "Prépa intégrée (ESILV)",
+    "path.1.sub.2.detail": "Classes préparatoires intégrées à l’ESILV. Enseignements intensifs en mathématiques appliquées, mécanique des systèmes, thermodynamique et algorithmique.",
+
+        "path.2.sub.bnp.title": "Stage en banque (BNP Paribas)",
+    "path.2.sub.bnp.detail": "Immersion professionnelle au sein du groupe BNP Paribas : rigueur opérationnelle, analyse de processus métiers, automatisation et gestion de données.",
+    "path.2.sub.ct.title": "Majeure Creative Technology",
+    "path.2.sub.ct.detail": "Formation d'ingénieur à l'ESILV croisant tech et design : électronique embarquée, IoT, robotique, fabrication numérique (FabLab) et prototypage physique.",
+
+    "path.3.sub.1.title": "Recherche GhostHatch (M2)",
+    "path.3.sub.1.detail": "Recherche appliquée en écologie marine : développement d’un système mécanique passif de libération pour casiers de pêche afin de neutraliser la pêche fantôme.",
+    "path.3.sub.2.title": "Résilience & IoT (Martinique)",
+    "path.3.sub.2.detail": "Conception et déploiement de capteurs IoT, stations météorologiques solaires autonomes et observatoire web au service de la collectivité du Lamentin.",
+    "path.3.sub.3.title": "Perspectives d'avenir",
+    "path.3.sub.3.detail": "Ingénierie de conception R&D, systèmes connectés, technologie durable et projets à fort impact environnemental et humain.",
     "nav.home": "ACCUEIL",
     "nav.projects": "PROJETS",
     "nav.path": "PARCOURS",
@@ -8,6 +32,7 @@ const translations = {
 
     "menu.school": "ÉCOLE",
     "menu.adventure": "AVENTURE",
+    "menu.exploration": "EXPLORATION",
     "menu.creation": "CRÉATION",
 
     "path.menu.1": "Bac scientifique",
@@ -29,6 +54,16 @@ const translations = {
     "category.school": "ÉCOLE",
     "category.creation": "CRÉATION",
     "category.adventure": "AVENTURE",
+    "category.exploration": "EXPLORATION",
+    "project.1.meta": "Stage en Martinique",
+    "project.2.meta": "Système génératif",
+    "project.3.meta": "Recherche sur les matériaux",
+    "project.4.meta": "Design mécanique",
+    "project.5.meta": "Design d'objet",
+    "project.6.meta": "Robotique",
+    "project.7.meta": "Photographie",
+    "project.8.meta": "Aventure",
+    "project.9.meta": "Design produit",
 
     "path.label": "PARCOURS",
     "path.1.subtitle": "FONDATIONS",
@@ -49,7 +84,25 @@ const translations = {
     "contact.email": "EMAIL",
     "contact.linkedin.text": "Profil professionnel",
     "contact.instagram.text": "Création & projets",
+    "contact.share.title": "Partager",
+    "contact.share.text": "Copier le lien du portfolio",
+    "contact.share.copied": "Lien copié ! ✓",
 
+        "ia.top.project": "Projet 02",
+    "ia.title": "ai lab",
+    "ia.subtitle.1": "intelligence artificielle",
+    "ia.subtitle.2": "×",
+    "ia.subtitle.3": "vision & interaction",
+    "ia.text.1": "Ce projet explore l’intelligence artificielle comme médium de création et d'interaction sensible. À travers l’entraînement de modèles de vision par ordinateur, de réseaux de neurones légers et d'interfaces gestuelles en temps réel, l'objectif est de questionner la frontière entre le corps, le geste humain et la réponse algorithmique.",
+    "ia.text.2": "Développé dans le cadre du cursus Creative Technology, le travail s'articule autour d'outils comme ml5.js, p5.js et Teachable Machine. Il détourne la reconnaissance d’images standard pour concevoir des expériences interactives immersives, où la machine apprend à interpréter les postures et les mouvements sans intermédiaire conventionnel.",
+    "ia.card.1.title": "Entraînement & Modèles",
+    "ia.card.1.text": "Collecte de données de postures et apprentissage supervisé via Teachable Machine et ml5.js. Optimisation des temps d'inférence en local pour permettre une interaction fluide à 60 images par seconde.",
+    "ia.card.2.title": "Interactions Corporelles",
+    "ia.card.2.text": "Traduction du flux vidéo en coordonnées spatiales. Les mouvements des mains et du corps deviennent des paramètres d'entrée pour piloter des générateurs visuels et sonores en direct.",
+    "ia.card.3.title": "Expérimentation Visuelle",
+    "ia.card.3.text": "Développement d’interfaces génératives réactives en canvas WebGL. Exploration de l'esthétique du code où chaque imperfection de l'IA engendre une nouvelle dynamique graphique.",
+    "hma.top.project": "Projet 04",
+    "photo.top.project": "Projet 07",
     "hma.title": "how to make anything",
     "hma.subtitle.1": "prototypage electronique",
     "hma.subtitle.2": "×",
@@ -61,15 +114,10 @@ const translations = {
     "hma.card.2.title": "Interactions augmentées",
     "hma.card.2.text": "Cette documentation explore l’intelligence artificielle comme outil de création interactive, à travers Teachable Machine, p5.js et les réseaux de neurones. Le projet détourne des expérimentations simples en interfaces corporelles où le geste questionne notre relation aux machines.",
     "hma.card.3.title": "Prototype",
-    "hma.card.3.text": "Modification d’un signal vidéo comme terrain d’expérimentation entre électronique, image et code. À travers un PCB, des potentiomètres et la bibliothèque Arduino VGAX, le projet transforme l’affichage en matière manipulable.",
-    "project.link.documentation": "→ Voir la documentation complète",
-    "hma.card.2.title": "Interactions augmentées",
-    "hma.card.2.text": "Cette documentation explore l’intelligence artificielle comme outil de création interactive, à travers Teachable Machine, p5.js et les réseaux de neurones. Le projet détourne des expérimentations simples en interfaces corporelles où le geste questionne notre relation aux machines.",
-    "hma.card.3.title": "Prototype",
     "hma.card.3.text": "Modification d’un signal vidéo comme terrain d’expérimentation entre électronique, image et code. À travers un PCB, des potentiomètres et la bibliothèque Arduino VGAX, le projet transforme l’affichage en matière manipulable : les couleurs, les pixels et les motifs deviennent des éléments que l’on peut régler, détourner et animer en temps réel.",
     "project.link.documentation": "→ Voir la documentation complète",
 
-    "ocean.top.project": "Projet 01",
+    "ocean.top.project": "Projet 03",
     "ocean.title": "ocean imprints",
     "ocean.subtitle.1": "bioplastic films",
     "ocean.subtitle.2": "× saltwater interaction",
@@ -83,7 +131,7 @@ const translations = {
     "ocean.card.3.text": "Construction d’un espace expérimental structuré autour de variables clés : recette, type d’eau, méthode d’exposition et durée. Cette approche permet de relier propriétés initiales et transformations observées, et de mieux comprendre l’influence du contexte sur le comportement du matériau.",
     "project.link.github": "→ Voir la documentation complète sur GitHub",
 
-    "pix.top.project": "Projet 07",
+    "pix.top.project": "Projet 06",
     "pix.title": "projet pix",
     "pix.subtitle.1": "ingénierie embarquée",
     "pix.subtitle.2": "×",
@@ -97,7 +145,7 @@ const translations = {
     "pix.card.3.title": "Apprentissage",
     "pix.card.3.text": "Ces projets m’ont permis de combiner mécanique, électronique et programmation, tout en apprenant à itérer rapidement et à gérer les contraintes réelles d’un système autonome.",
 
-    "veloute.top.project": "Projet 03",
+    "veloute.top.project": "Projet 08",
     "veloute.title": "velouté",
     "veloute.subtitle.1": "Expédition solitaire",
     "veloute.subtitle.2": "×",
@@ -113,7 +161,7 @@ const translations = {
     "veloute.card.3.text": "Une journée commence généralement tôt, avec un départ au lever du jour. La majorité de la distance quotidienne est réalisée avant le déjeuner. Après environ 120 km selon le terrain et les conditions, il faut trouver un point de chute : le plus souvent un bivouac ou un hébergement grâce à la communauté Warmshowers.",
     "veloute.polarsteps.link": "→ Lien de mon Polarsteps pour tous les détails",
 
-    "surfboard.top.project": "Projet 06",
+    "surfboard.top.project": "Projet 09",
     "surfboard.title": "Surfboard",
     "surfboard.subtitle.1": "Exploration technique",
     "surfboard.subtitle.2": "×",
@@ -127,7 +175,7 @@ const translations = {
     "surfboard.card.3.title": "Approche collective",
     "surfboard.card.3.text": "Le projet a également été conçu comme un support d’échange au sein de l’association, permettant de partager les connaissances et d’impliquer d’autres membres dans le processus. Cette dimension collective a renforcé l’appropriation du projet et favorisé une dynamique d’apprentissage collaborative.",
 
-    "orika.top.project": "Projet 08",
+    "orika.top.project": "Projet 05",
     "orika.title": "orika",
     "orika.subtitle.1": "Design essentiel",
     "orika.subtitle.2": "×",
@@ -142,8 +190,8 @@ const translations = {
     "orika.card.3.text": "La campagne Kickstarter, lancée en avril 2026, a permis de tester l’intérêt du public et de valider le projet, atteignant 772 € engagés, soit 350 % de l’objectif, avec 21 contributeurs. Nous gérons l’ensemble du projet : production, logistique et envoi aux contributeurs, dans une approche concrète et entrepreneuriale.",
     "orika.kickstarter.link": "→ Voir la campagne Kickstarter complète",
 
-    "martinique.top.project": "Projet 05",
-    "martinique.title": "martinique",
+    "martinique.top.project": "Projet 01",
+    "martinique.title": "field notes",
     "martinique.subtitle.1": "Technologie",
     "martinique.subtitle.2": "×",
     "martinique.subtitle.3": "Resilience territoriale",
@@ -159,6 +207,28 @@ const translations = {
   },
 
   en: {
+        "a11y.skip": "Skip to main content",
+    "nav.cv": "CV",
+    "nav.cv.full": "Download Resume (PDF)",
+    "path.modal.open": "Details",
+    "path.modal.close": "Close ✕",
+
+    "path.1.sub.1.title": "Scientific Baccalaureate",
+    "path.1.sub.1.detail": "Specialized in Mathematics & Physics-Chemistry. Graduated with highest honors. Foundations of scientific inquiry and experimental thinking.",
+    "path.1.sub.2.title": "Integrated Preparatory Cycle (ESILV)",
+    "path.1.sub.2.detail": "Intensive engineering prep at ESILV in applied mathematics, system mechanics, thermodynamics, and computer science algorithms.",
+
+        "path.2.sub.bnp.title": "Banking Internship (BNP Paribas)",
+    "path.2.sub.bnp.detail": "Professional immersion at BNP Paribas Group: operational rigor, business process analysis, automation, and data management.",
+    "path.2.sub.ct.title": "Creative Technology Major",
+    "path.2.sub.ct.detail": "Engineering degree at ESILV blending tech and design: embedded electronics, IoT, robotics, digital fabrication (FabLab), and physical prototyping.",
+
+    "path.3.sub.1.title": "GhostHatch Research (M2)",
+    "path.3.sub.1.detail": "Master’s thesis in marine ecology: designing a passive mechanical release system for lost fishing traps to eliminate ghost fishing.",
+    "path.3.sub.2.title": "Territorial Resilience & IoT (Martinique)",
+    "path.3.sub.2.detail": "Design and field deployment of IoT sensors, autonomous solar weather stations, and web observatory for the City of Le Lamentin.",
+    "path.3.sub.3.title": "Career Aspirations",
+    "path.3.sub.3.detail": "R&D design engineering, connected systems, sustainable innovation, and high-impact technology projects.",
     "nav.home": "HOME",
     "nav.projects": "PROJECTS",
     "nav.path": "PATH",
@@ -167,6 +237,7 @@ const translations = {
 
     "menu.school": "SCHOOL",
     "menu.adventure": "ADVENTURE",
+    "menu.exploration": "EXPLORATION",
     "menu.creation": "CREATION",
 
     "path.menu.1": "Scientific high school",
@@ -188,6 +259,16 @@ const translations = {
     "category.school": "SCHOOL",
     "category.creation": "CREATION",
     "category.adventure": "ADVENTURE",
+    "category.exploration": "EXPLORATION",
+    "project.1.meta": "Internship in Martinique",
+    "project.2.meta": "Generative System",
+    "project.3.meta": "Material Research",
+    "project.4.meta": "Mechanical Design",
+    "project.5.meta": "Object Design",
+    "project.6.meta": "Robotics",
+    "project.7.meta": "Photography",
+    "project.8.meta": "Adventure",
+    "project.9.meta": "Product Design",
 
     "path.label": "PATH",
     "path.1.subtitle": "FOUNDATIONS",
@@ -208,7 +289,25 @@ const translations = {
     "contact.email": "EMAIL",
     "contact.linkedin.text": "Professional profile",
     "contact.instagram.text": "Creation & projects",
+    "contact.share.title": "Share",
+    "contact.share.text": "Copy portfolio link",
+    "contact.share.copied": "Link copied! ✓",
 
+        "ia.top.project": "Project 02",
+    "ia.title": "ai lab",
+    "ia.subtitle.1": "artificial intelligence",
+    "ia.subtitle.2": "×",
+    "ia.subtitle.3": "vision & interaction",
+    "ia.text.1": "This project explores artificial intelligence as a medium for sensitive creation and interaction. By training computer vision models, lightweight neural networks, and real-time gestural interfaces, the goal is to examine the boundary between the body, human movement, and algorithmic response.",
+    "ia.text.2": "Developed within the Creative Technology curriculum, this work utilizes tools like ml5.js, p5.js, and Teachable Machine. It repurposes standard image recognition to craft immersive interactive experiences where machines learn to interpret postures and gestures beyond conventional screens.",
+    "ia.card.1.title": "Training & Models",
+    "ia.card.1.text": "Posture dataset collection and supervised learning with Teachable Machine and ml5.js. Optimizing local inference times to enable smooth real-time interaction at 60 fps.",
+    "ia.card.2.title": "Bodily Interactions",
+    "ia.card.2.text": "Translating video stream into spatial coordinates. Hand and body movements become input parameters driving live visual and sound generators.",
+    "ia.card.3.title": "Visual Experimentation",
+    "ia.card.3.text": "Developing reactive generative interfaces in WebGL canvas. Exploring the aesthetics of code where AI imperfections produce emergent graphic dynamics.",
+    "hma.top.project": "Project 04",
+    "photo.top.project": "Project 07",
     "hma.title": "how to make anything",
     "hma.subtitle.1": "electronic prototyping",
     "hma.subtitle.2": "×",
@@ -223,7 +322,7 @@ const translations = {
     "hma.card.3.text": "Modifying a video signal becomes an experimental field between electronics, image and code. Through a PCB, potentiometers and the Arduino VGAX library, the project turns the display into a manipulable material: colors, pixels and patterns become elements that can be adjusted, diverted and animated in real time.",
     "project.link.documentation": "→ View full documentation",
 
-    "ocean.top.project": "Project 01",
+    "ocean.top.project": "Project 03",
     "ocean.title": "ocean imprints",
     "ocean.subtitle.1": "bioplastic films",
     "ocean.subtitle.2": "× saltwater interaction",
@@ -237,7 +336,7 @@ const translations = {
     "ocean.card.3.text": "Construction of an experimental space structured around key variables: recipe, water type, exposure method and duration. This approach connects initial properties with observed transformations and helps understand the influence of context on material behavior.",
     "project.link.github": "→ View full documentation on GitHub",
 
-    "pix.top.project": "Project 07",
+    "pix.top.project": "Project 06",
     "pix.title": "pix project",
     "pix.subtitle.1": "embedded engineering",
     "pix.subtitle.2": "×",
@@ -251,7 +350,7 @@ const translations = {
     "pix.card.3.title": "Learning process",
     "pix.card.3.text": "These projects allowed me to combine mechanics, electronics and programming, while learning to iterate quickly and manage the real constraints of an autonomous system.",
 
-    "veloute.top.project": "Project 03",
+    "veloute.top.project": "Project 08",
     "veloute.title": "velouté",
     "veloute.subtitle.1": "solo expedition",
     "veloute.subtitle.2": "×",
@@ -267,7 +366,7 @@ const translations = {
     "veloute.card.3.text": "A typical day usually starts early, with departure at sunrise. Most of the daily distance is covered before lunch. After around 120 km depending on terrain and conditions, the next challenge is to find a place to stay: most often a bivouac spot or accommodation through the Warmshowers community.",
     "veloute.polarsteps.link": "→ Link to my Polarsteps for all details",
 
-    "surfboard.top.project": "Project 06",
+    "surfboard.top.project": "Project 09",
     "surfboard.title": "Surfboard",
     "surfboard.subtitle.1": "technical exploration",
     "surfboard.subtitle.2": "×",
@@ -281,7 +380,7 @@ const translations = {
     "surfboard.card.3.title": "Collective approach",
     "surfboard.card.3.text": "The project was also designed as a shared learning experience within the association, allowing knowledge to circulate and involving other members in the process. This collective dimension strengthened ownership of the project and supported a collaborative learning dynamic.",
 
-    "orika.top.project": "Project 08",
+    "orika.top.project": "Project 05",
     "orika.title": "orika",
     "orika.subtitle.1": "essential design",
     "orika.subtitle.2": "×",
@@ -296,8 +395,8 @@ const translations = {
     "orika.card.3.text": "The Kickstarter campaign, launched in April 2026, helped test public interest and validate the project, reaching €772 pledged, 350% of the funding goal, with 21 contributors. We manage the full project: production, logistics and shipping to contributors, through a concrete and entrepreneurial approach.",
     "orika.kickstarter.link": "→ View the full Kickstarter campaign", 
 
-    "martinique.top.project": "Project 05",
-    "martinique.title": "martinique", 
+    "martinique.top.project": "Project 01",
+    "martinique.title": "field notes", 
     "martinique.subtitle.1": "Technology",
     "martinique.subtitle.2": "×",
     "martinique.subtitle.3": "Territorial Resilience",
@@ -312,6 +411,151 @@ const translations = {
     "martinique.card.3.text": "Development of autonomous solutions adapted to local conditions, including a solar-powered weather station, custom 3D-designed and printed parts, and an autonomous lighting prototype for tsunami evacuation signage."
   }
 };
+
+/* =========================================================
+   DONNÉES ÉDITORIALES DE LA MODAL PARCOURS (BILINGUE)
+========================================================= */
+const timelineModalData = {
+  bac: {
+    period: "2019 — 2022",
+    tag: { fr: "LYCÉE & SPÉCIALITÉS", en: "HIGH SCHOOL & SPECIALIZATION" },
+    title: { fr: "Baccalauréat Scientifique", en: "Scientific Baccalaureate" },
+    detail: {
+      fr: "Spécialité Mathématiques & Physique-Chimie avec mention Très Bien. Première approche approfondie de la méthode scientifique, du raisonnement abstrait et de la rigueur d’analyse expérimentale.",
+      en: "Specialization in Mathematics & Physics-Chemistry with highest honors (Mention Très Bien). First in-depth immersion in scientific methodology, abstract reasoning, and experimental rigor."
+    },
+    pills: {
+      fr: ["Mathématiques", "Physique-Chimie", "Mention Très Bien", "Rigueur Scientifique"],
+      en: ["Mathematics", "Physics & Chemistry", "Highest Honors", "Scientific Inquiry"]
+    }
+  },
+  prepa: {
+    period: "2019 — 2022",
+    tag: { fr: "CYCLE PRÉPARATOIRE", en: "PREPARATORY CYCLE" },
+    title: { fr: "Classes Préparatoires Intégrées (ESILV)", en: "Integrated Prep Cycle (ESILV)" },
+    detail: {
+      fr: "Deux années intensives de cycle préparatoire intégré au sein de l'ESILV. Solide formation fondamentale en mathématiques appliquées, mécanique des solides et des fluides, thermodynamique et algorithmique fondamentale.",
+      en: "Two intensive years of integrated engineering preparation at ESILV. Strong foundation in applied mathematics, mechanics of solids & fluids, thermodynamics, and algorithms."
+    },
+    pills: {
+      fr: ["Mathématiques Appliquées", "Mécanique & Physique", "Algorithmique", "ESILV"],
+      en: ["Applied Mathematics", "Mechanics & Physics", "Algorithms", "ESILV"]
+    }
+  },
+  bnp: {
+    period: "2022 — 2025",
+    tag: { fr: "STAGE & IMMERSION", en: "INTERNSHIP & IMMERSION" },
+    title: { fr: "Stage en banque (BNP Paribas)", en: "Banking Internship (BNP Paribas)" },
+    detail: {
+      fr: "Immersion professionnelle au sein du groupe BNP Paribas : appréhension de la rigueur opérationnelle bancaire, modélisation et analyse de processus métiers, automatisation de flux de travail et manipulation structurée de bases de données.",
+      en: "Professional immersion at BNP Paribas: banking operational rigor, business workflow modeling & analysis, process automation, and structured database operations."
+    },
+    pills: {
+      fr: ["BNP Paribas", "Processus Métiers", "Automatisation", "Gestion de Données"],
+      en: ["BNP Paribas", "Business Processes", "Automation", "Data Management"]
+    }
+  },
+  ct: {
+    period: "2022 — 2025",
+    tag: { fr: "SPÉCIALISATION INGÉNIEUR", en: "ENGINEERING SPECIALIZATION" },
+    title: { fr: "Majeure Creative Technology", en: "Creative Technology Major" },
+    detail: {
+      fr: "Formation d'ingénieur à l'ESILV croisant tech et design : électronique embarquée (microcontrôleurs, capteurs), prototypage rapide physique, fabrication numérique (impression 3D, découpe laser au FabLab), IoT et conception de dispositifs interactifs.",
+      en: "Engineering major at ESILV bridging engineering and design: embedded electronics (microcontrollers, sensors), physical rapid prototyping, digital fabrication (3D printing, laser cutting at FabLab), IoT, and interactive device design."
+    },
+    pills: {
+      fr: ["Électronique Embarquée", "Prototypage FabLab", "IoT & Systèmes", "Design Interactif"],
+      en: ["Embedded Electronics", "FabLab Prototyping", "IoT & Systems", "Interactive Design"]
+    }
+  },
+  ghost: {
+    period: "2026 — Aujourd'hui",
+    tag: { fr: "RECHERCHE & BIOMIMÉTISME", en: "RESEARCH & BIOMIMICRY" },
+    title: { fr: "Recherche GhostHatch (M2)", en: "GhostHatch Research (M2)" },
+    detail: {
+      fr: "Recherche appliquée et ingénierie de conception en écologie marine : développement d’un système mécanique passif de libération pour casiers de pêche afin de neutraliser la pêche fantôme causée par les engins perdus en mer.",
+      en: "Applied research and design engineering in marine ecology: developing an autonomous passive release mechanism for fishing traps to eliminate ghost fishing from lost gear."
+    },
+    pills: {
+      fr: ["Écologie Marine", "Mécanique Passive", "Écoconception", "Master 2"],
+      en: ["Marine Ecology", "Passive Mechanics", "Ecodesign", "Master 2"]
+    }
+  },
+  avenir: {
+    period: "2026 — Aujourd'hui",
+    tag: { fr: "VISION PROFESSIONNELLE", en: "CAREER VISION" },
+    title: { fr: "Perspectives d'avenir", en: "Future Prospects" },
+    detail: {
+      fr: "Recherche d'opportunités en ingénierie de conception R&D, innovation technologique hardware & software, systèmes connectés et projets durables à fort impact environnemental et humain.",
+      en: "Seeking opportunities in R&D design engineering, hardware & software technological innovation, connected systems, and sustainable projects with high environmental and human impact."
+    },
+    pills: {
+      fr: ["Ingénierie R&D", "Innovation Hardware & Soft", "Technologies Durables", "Impact"],
+      en: ["R&D Engineering", "Hardware & Software Innovation", "Sustainable Tech", "Impact"]
+    }
+  }
+};
+
+let currentActiveModalKey = null;
+let lastFocusedElement = null;
+
+function renderTimelineModal(key, lang) {
+  const data = timelineModalData[key];
+  if (!data) return;
+
+  const modalPeriod = document.getElementById("modalPeriod");
+  const modalTag = document.getElementById("modalTag");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDetail = document.getElementById("modalDetail");
+  const modalTags = document.getElementById("modalTags");
+
+  if (modalPeriod) modalPeriod.textContent = data.period;
+  if (modalTag) modalTag.textContent = data.tag[lang] || data.tag.fr;
+  if (modalTitle) modalTitle.textContent = data.title[lang] || data.title.fr;
+  if (modalDetail) modalDetail.textContent = data.detail[lang] || data.detail.fr;
+
+  if (modalTags) {
+    modalTags.innerHTML = "";
+    const pills = data.pills[lang] || data.pills.fr || [];
+    pills.forEach((text) => {
+      const span = document.createElement("span");
+      span.className = "timeline-modal-pill";
+      span.textContent = text;
+      modalTags.appendChild(span);
+    });
+  }
+}
+
+function openTimelineModal(key) {
+  const modal = document.getElementById("timelineModal");
+  if (!modal) return;
+
+  const currentLang = document.documentElement.lang || "fr";
+  currentActiveModalKey = key;
+  renderTimelineModal(key, currentLang);
+
+  lastFocusedElement = document.activeElement;
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+
+  const closeBtn = modal.querySelector(".timeline-modal-close");
+  if (closeBtn) closeBtn.focus();
+}
+
+function closeTimelineModal() {
+  const modal = document.getElementById("timelineModal");
+  if (!modal) return;
+
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  currentActiveModalKey = null;
+
+  if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+    lastFocusedElement.focus();
+  }
+}
 
 function applyLanguage(lang) {
   const dictionary = translations[lang];
@@ -332,11 +576,76 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-set-lang]").forEach((button) => {
     button.classList.toggle("active", button.dataset.setLang === lang);
   });
+
+  if (currentActiveModalKey) {
+    renderTimelineModal(currentActiveModalKey, lang);
+  }
+}
+
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+  if (document.body) {
+    document.body.setAttribute("data-theme", isDark ? "dark" : "light");
+    document.body.classList.toggle("theme-dark", isDark);
+  }
+  document.documentElement.classList.toggle("theme-dark", isDark);
+  try {
+    localStorage.setItem("portfolioTheme", isDark ? "dark" : "light");
+  } catch (e) {}
+
+  const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+  if (metaColorScheme) {
+    metaColorScheme.setAttribute("content", isDark ? "dark" : "light");
+  }
+
+  // Les images langue deviennent langue 1 en mode nuit (et restent toujours langue 1 dans les pages projets)
+  document.querySelectorAll(".langue-toggle-img").forEach((img) => {
+    const isProjectPage = document.body && document.body.classList.contains("project-page");
+    const targetSrc = isProjectPage
+      ? (img.dataset.darkSrc || img.dataset.lightSrc)
+      : (isDark ? img.dataset.darkSrc : img.dataset.lightSrc);
+    if (targetSrc && img.getAttribute("src") !== targetSrc) {
+      img.setAttribute("src", targetSrc);
+    }
+  });
+
+  // Mise à jour de l'état du bouton
+  document.querySelectorAll(".theme-toggle-btn").forEach((btn) => {
+    btn.setAttribute("aria-pressed", isDark ? "true" : "false");
+    const currentLang = localStorage.getItem("portfolioLanguage") || "fr";
+    const dict = translations[currentLang] || translations.fr;
+    if (dict && dict["theme.toggle.night"]) {
+      btn.setAttribute("title", isDark ? dict["theme.toggle.night"] : dict["theme.toggle.day"]);
+    }
+  });
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme") || "light";
+  const newTheme = current === "dark" ? "light" : "dark";
+  applyTheme(newTheme);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLanguage = localStorage.getItem("portfolioLanguage") || "fr";
+  // 0. Initialisation Thème (Jour / Nuit)
+  const savedTheme = localStorage.getItem("portfolioTheme") || "light";
+  applyTheme(savedTheme);
 
+  document.querySelectorAll(".theme-toggle-btn").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleTheme();
+    });
+  });
+
+  window.addEventListener("storage", (event) => {
+    if (event.key === "portfolioTheme") {
+      applyTheme(event.newValue || "light");
+    }
+  });
+  // 1. Gestion de la langue
+  const savedLanguage = localStorage.getItem("portfolioLanguage") || "fr";
   applyLanguage(savedLanguage);
 
   document.querySelectorAll("[data-set-lang]").forEach((button) => {
@@ -344,39 +653,131 @@ document.addEventListener("DOMContentLoaded", () => {
       applyLanguage(button.dataset.setLang);
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Ouvrir/fermer le menu de langue/thème au toucher ou clic
+  const langContainer = document.querySelector(".language-menu-container");
+  const langLogoBtn = document.querySelector(".language-logo-button");
+  if (langLogoBtn && langContainer) {
+    langLogoBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      langContainer.classList.toggle("is-active");
+    });
+    document.addEventListener("click", () => {
+      langContainer.classList.remove("is-active");
+    });
+  }
+
+  // 2. Menu mobile de navigation
   const portfolioButton = document.querySelector(".mobile-portfolio-button");
   const portfolioMenu = document.querySelector(".mobile-portfolio-menu");
 
-  if (!portfolioButton || !portfolioMenu) return;
+  if (portfolioButton && portfolioMenu) {
+    const closePortfolioMenu = () => {
+      portfolioMenu.classList.remove("open");
+      portfolioButton.setAttribute("aria-expanded", "false");
+    };
 
-  const closePortfolioMenu = () => {
-    portfolioMenu.classList.remove("open");
-    portfolioButton.setAttribute("aria-expanded", "false");
-  };
+    portfolioButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const isOpen = portfolioMenu.classList.toggle("open");
+      portfolioButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
 
-  portfolioButton.addEventListener("click", (event) => {
-    event.stopPropagation();
+    portfolioMenu.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
 
-    const isOpen = portfolioMenu.classList.toggle("open");
-    portfolioButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    portfolioMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closePortfolioMenu);
+    });
+
+    document.addEventListener("click", closePortfolioMenu);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closePortfolioMenu();
+      }
+    });
+  }
+
+  // 3. Frise parcours : ouverture de la petite fenêtre (modal pop-up éditoriale)
+  document.querySelectorAll("[data-modal-key]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.modalKey;
+      openTimelineModal(key);
+    });
   });
 
-  portfolioMenu.addEventListener("click", (event) => {
-    event.stopPropagation();
+  document.querySelectorAll("[data-close-modal]").forEach((element) => {
+    element.addEventListener("click", closeTimelineModal);
   });
-
-  portfolioMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", closePortfolioMenu);
-  });
-
-  document.addEventListener("click", closePortfolioMenu);
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closePortfolioMenu();
+    if (event.key === "Escape" && currentActiveModalKey) {
+      closeTimelineModal();
     }
   });
+
+  // 4. Bouton Partager le portfolio
+  initShareButton();
 });
+
+function initShareButton() {
+  const shareBtn = document.getElementById("sharePortfolioBtn");
+  if (!shareBtn) return;
+
+  const statusText = document.getElementById("shareStatusText");
+  let resetTimeout = null;
+
+  shareBtn.addEventListener("click", async () => {
+    // URL propre du portfolio
+    const shareUrl = window.location.href.split("#")[0];
+    let copied = false;
+
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        copied = true;
+      } catch (err) {
+        copied = fallbackCopyText(shareUrl);
+      }
+    } else {
+      copied = fallbackCopyText(shareUrl);
+    }
+
+    if (copied && statusText) {
+      const currentLang = document.documentElement.lang === "en" ? "en" : "fr";
+      const dict = translations[currentLang] || translations.fr;
+      statusText.textContent = dict["contact.share.copied"] || "Lien copié ! ✓";
+      shareBtn.classList.add("contact-info-row--copied");
+
+      clearTimeout(resetTimeout);
+      resetTimeout = setTimeout(() => {
+        const langNow = document.documentElement.lang === "en" ? "en" : "fr";
+        const currentDict = translations[langNow] || translations.fr;
+        statusText.textContent = currentDict["contact.share.text"] || "Copier le lien du portfolio";
+        shareBtn.classList.remove("contact-info-row--copied");
+      }, 2500);
+    }
+  });
+}
+
+function fallbackCopyText(text) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.position = "fixed";
+  textArea.style.left = "-9999px";
+  textArea.style.top = "0";
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  let successful = false;
+  try {
+    successful = document.execCommand("copy");
+  } catch (err) {
+    successful = false;
+  }
+  document.body.removeChild(textArea);
+  return successful;
+}
+

@@ -1,0 +1,6 @@
+desktop.ini
+*/desktop.ini
+*~/
+*.tmp
+.DS_Store
+Thumbs.db

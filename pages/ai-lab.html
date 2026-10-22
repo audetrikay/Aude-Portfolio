@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>AI Lab — Aude</title>
+
+  <link rel="icon" type="image/png" href="../assets/images/langue1.jpeg">
+  <link rel="apple-touch-icon" href="../assets/images/langue1.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem("portfolioTheme");
+        if (t === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark"); document.documentElement.classList.add("theme-dark");
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../style.css?v=28" />
+</head>
+
+<body class="project-page">
+
+  <!-- HEADER -->
+  <header class="top-header">
+
+    <div class="header-left mobile-portfolio-zone">
+      <span class="desktop-portfolio-text">Aude — Portfolio</span>
+
+      <button class="mobile-portfolio-button" type="button" aria-expanded="false" aria-controls="mobilePortfolioMenu">
+        Aude — Portfolio
+      </button>
+
+      <div class="mobile-portfolio-menu" id="mobilePortfolioMenu">
+        <a href="../index.html#accueil" class="mobile-menu-home">Portfolio / Accueil</a>
+        <a href="../assets/CV_Aude_Desperies.pdf" target="_blank" rel="noopener noreferrer" class="mobile-menu-cv" data-i18n="nav.cv.full">Mon CV (PDF)</a>
+
+        <span>Projets</span>
+        <a href="mission-martinique.html">01 — Field Notes</a>
+        <a href="ai-lab.html">02 — AI Lab</a>
+        <a href="ocean-imprints.html">03 — Ocean Imprints</a>
+        <a href="hma.html">04 — How to Make Almost Anything</a>
+        <a href="orika-design.html">05 — Orika</a>
+        <a href="projet-pix.html">06 — Projet Pix</a>
+        <a href="photographie.html">07 — Photographie</a>
+        <a href="veloute.html">08 — Velouté</a>
+        <a href="surfboard.html">09 — Surfboard</a>
+
+        <span>Navigation</span>
+        <a href="../index.html#apropos">Actualité</a>
+        <a href="../index.html#projets">Projets</a>
+        <a href="../index.html#parcours">Parcours</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html#accueil" data-i18n="nav.home">Accueil</a>
+      <a href="../index.html#apropos" data-i18n="nav.news">Actualité</a>
+
+      <div class="nav-item project-menu">
+        <a href="../index.html#projets" data-i18n="nav.projects">Projets</a>
+
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3 data-i18n="menu.school">École</h3>
+            <a href="ai-lab.html">AI Lab</a>
+            <a href="ocean-imprints.html">Ocean Imprints</a>
+            <a href="hma.html">How to Make Almost Anything</a>
+          </div>
+
+          <div class="mega-column">
+            <h3 data-i18n="menu.creation">Création</h3>
+            <a href="orika-design.html">Orika</a>
+            <a href="surfboard.html">Surfboard</a>
+            <a href="projet-pix.html">Projet Pix</a>
+          </div>
+
+          <div class="mega-column">
+            <h3 data-i18n="menu.exploration">Exploration</h3>
+            <a href="mission-martinique.html">Field Notes</a>
+            <a href="veloute.html">Velouté</a>
+            <a href="photographie.html">Photographie</a>
+          </div>
+        </div>
+        </div>
+
+      <div class="nav-item project-menu">
+        <a href="../index.html#parcours" class="nav-button" data-i18n="nav.path">Parcours</a>
+
+        <div class="mega-menu parcours-mega-menu">
+          <div class="mega-column">
+            <h3>2019 — 2022</h3>
+            <a href="../index.html#parcours" data-i18n="path.menu.1">Bac scientifique</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.2">Prépa intégrée</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>2022 — 2025</h3>
+            <a href="../index.html#parcours" data-i18n="path.menu.3">Cycle ingénieur</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.4">Creative Technology</a>
+            <a href="../index.html#parcours" data-i18n="path.menu.5">Projets design & tech</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="../assets/CV_Aude_Desperies.pdf" class="cv-button" target="_blank" rel="noopener noreferrer" aria-label="Consulter mon CV">
+        <span data-i18n="nav.cv">CV</span>
+      </a>
+
+      <div class="language-menu-container">
+        <button class="language-logo-button" type="button" aria-label="Changer la langue">
+          <img src="../assets/images/langue1.jpeg" data-light-src="../assets/images/langue1.jpeg" data-dark-src="../assets/images/langue1.jpeg" alt="" class="langue-toggle-img">
+        </button>
+
+        <div class="language-menu">
+          <button type="button" data-set-lang="fr">Français</button>
+          <button type="button" data-set-lang="en">English</button>
+          <div class="theme-toggle-container">
+            <button type="button" class="theme-toggle-btn" aria-label="Basculer le mode jour/nuit" title="Mode jour / nuit">
+              <img src="../assets/images/jour-nuit.jpeg" alt="Mode jour / nuit" class="theme-toggle-img">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="project-detail-page ia-page">
+
+    <section class="project-detail-hero">
+
+      <div class="project-detail-topline">
+        <span data-i18n="ia.top.project">Projet 02</span>
+      </div>
+
+      <div class="project-detail-title">
+        <h1 data-i18n="ia.title">ai lab</h1>
+      </div>
+
+      <div class="project-detail-index">
+        <p class="project-manifesto">
+          <strong data-i18n="ia.subtitle.1">intelligence artificielle</strong>
+          <strong data-i18n="ia.subtitle.2">×</strong>
+          <strong data-i18n="ia.subtitle.3">vision & interaction</strong>
+        </p>
+      </div>
+
+      <div class="project-detail-text">
+        <p data-i18n="ia.text.1">
+          Ce projet explore l’intelligence artificielle comme médium de création et d'interaction sensible.
+          À travers l’entraînement de modèles de vision par ordinateur, de réseaux de neurones légers et
+          d'interfaces gestuelles en temps réel, l'objectif est de questionner la frontière entre le corps,
+          le geste humain et la réponse algorithmique.
+        </p>
+
+        <p data-i18n="ia.text.2">
+          Développé dans le cadre du cursus Creative Technology, le travail s'articule autour d'outils
+          comme ml5.js, p5.js et Teachable Machine. Il détourne la reconnaissance d’images standard pour
+          concevoir des expériences interactives immersives, où la machine apprend à interpréter les postures
+          et les mouvements sans intermédiaire conventionnel.
+        </p>
+
+        <p>
+          <a href="https://bow-chalk-0b1.notion.site/HMAA-Week-4-Learning-AI-2fccb55dd235802e83e1c0e6e72970eb?source=copy_link"
+            target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="project.link.documentation">
+            → Voir la documentation complète
+          </a>
+        </p>
+      </div>
+
+      <div class="project-detail-image">
+        <img src="../assets/images/ia-01.png" alt="AI Lab Machine Learning">
+      </div>
+
+    </section>
+
+    <section class="project-detail-gallery">
+
+      <article class="project-mini-card">
+        <img src="../assets/images/ia-02.png" alt="Entraînement modèles IA">
+        <div>
+          <span>01</span>
+          <h3 data-i18n="ia.card.1.title">Entraînement & Modèles</h3>
+          <p data-i18n="ia.card.1.text">
+            Collecte de données de postures et apprentissage supervisé via Teachable Machine et ml5.js.
+            Optimisation des temps d'inférence en local pour permettre une interaction fluide à 60 images par seconde.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <img src="../assets/images/ia-03.png" alt="Interactions corporelles">
+        <div>
+          <span>02</span>
+          <h3 data-i18n="ia.card.2.title">Interactions Corporelles</h3>
+          <p data-i18n="ia.card.2.text">
+            Traduction du flux vidéo en coordonnées spatiales. Les mouvements des mains et du corps
+            deviennent des paramètres d'entrée pour piloter des générateurs visuels et sonores en direct.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <img src="../assets/images/ia-04.png" alt="Expérimentation visuelle">
+        <div>
+          <span>03</span>
+          <h3 data-i18n="ia.card.3.title">Expérimentation Visuelle</h3>
+          <p data-i18n="ia.card.3.text">
+            Développement d’interfaces génératives réactives en canvas WebGL. Exploration de l'esthétique
+            du code où chaque imperfection de l'IA engendre une nouvelle dynamique graphique.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="../script.js?v=20"></script>
+</body>
+
+</html>

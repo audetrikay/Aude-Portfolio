@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8" />
 
-    <div class="header-left">Aude — Portfolio</div>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
     <title>Portfolio — Aude</title>
 
@@ -19,10 +17,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preload" as="image" href="assets/images/hero1.jpg" />
+    <script>
+        (function() {
+            try {
+                var t = localStorage.getItem("portfolioTheme");
+                if (t === "dark") {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                    document.documentElement.classList.add("theme-dark");
+                }
+            } catch(e) {}
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css?v=28" />
 </head>
 
+
+
 <body>
+    <a href="#accueil" class="skip-link" data-i18n="a11y.skip">Passer au contenu principal</a>
+
 
     <!-- HEADER -->
     <header class="top-header">
@@ -35,18 +50,20 @@
                 Aude — Portfolio
             </button>
 
-            <div class="mobile-portfolio-menu" id="mobilePortfolioMenu">
+                        <div class="mobile-portfolio-menu" id="mobilePortfolioMenu">
                 <a href="#accueil" class="mobile-menu-home">Portfolio / Accueil</a>
+                <a href="assets/CV_Aude_Desperies.pdf" target="_blank" rel="noopener noreferrer" class="mobile-menu-cv" data-i18n="nav.cv.full">Mon CV (PDF)</a>
 
-                <span>Projets</span>
-                <a href="pages/ocean-imprints.html">Ocean Imprints</a>
-                <a href="pages/hma.html">How to Make Almost Anything</a>
-                <a href="pages/projet-pix.html">Projet Pix</a>
-                <a href="pages/veloute.html">Velouté</a>
-                <a href="pages/mission-martinique.html">Martinique</a>
-                <a href="pages/photographie.html">Photographie</a>
-                <a href="pages/surfboard.html">Surfboard</a>
-                <a href="pages/orika-design.html">Orika</a>
+                                <span>Projets</span>
+                <a href="pages/mission-martinique.html">01 — Field Notes</a>
+                <a href="pages/ai-lab.html">02 — AI Lab</a>
+                <a href="pages/ocean-imprints.html">03 — Ocean Imprints</a>
+                <a href="pages/hma.html">04 — How to Make Almost Anything</a>
+                <a href="pages/orika-design.html">05 — Orika</a>
+                <a href="pages/projet-pix.html">06 — Projet Pix</a>
+                <a href="pages/photographie.html">07 — Photographie</a>
+                <a href="pages/veloute.html">08 — Velouté</a>
+                <a href="pages/surfboard.html">09 — Surfboard</a>
 
                 <span>Navigation</span>
                 <a href="#parcours">Parcours</a>
@@ -56,8 +73,9 @@
         </div>
 
 
-        <nav class="main-nav">
+                <nav class="main-nav">
             <a href="#accueil" data-i18n="nav.home">Accueil</a>
+            <a href="#apropos" data-i18n="nav.news">Actualité</a>
 
             <div class="nav-item project-menu">
                 <a href="#projets" data-i18n="nav.projects">Projets</a>
@@ -65,25 +83,26 @@
                 <div class="mega-menu">
                     <div class="mega-column">
                         <h3 data-i18n="menu.school">École</h3>
+                        <a href="pages/ai-lab.html">AI Lab</a>
                         <a href="pages/ocean-imprints.html">Ocean Imprints</a>
                         <a href="pages/hma.html">How to Make Almost Anything</a>
-                        <a href="pages/projet-pix.html">Projet Pix</a>
-                    </div>
-
-                    <div class="mega-column">
-                        <h3 data-i18n="menu.adventure">Aventure</h3>
-                        <a href="pages/veloute.html">Velouté</a>
-                        <a href="pages/mission-martinique.html">Martinique</a>
                     </div>
 
                     <div class="mega-column">
                         <h3 data-i18n="menu.creation">Création</h3>
-                        <a href="pages/photographie.html">Photographie</a>
-                        <a href="pages/surfboard.html">Surfboard</a>
                         <a href="pages/orika-design.html">Orika</a>
+                        <a href="pages/surfboard.html">Surfboard</a>
+                        <a href="pages/projet-pix.html">Projet Pix</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3 data-i18n="menu.exploration">Exploration</h3>
+                        <a href="pages/mission-martinique.html">Field Notes</a>
+                        <a href="pages/veloute.html">Velouté</a>
+                        <a href="pages/photographie.html">Photographie</a>
                     </div>
                 </div>
-            </div>
+                </div>
 
             <div class="nav-item project-menu">
                 <a href="#parcours" data-i18n="nav.path">Parcours</a>
@@ -104,19 +123,27 @@
                 </div>
             </div>
 
-            <a href="#apropos" data-i18n="nav.news">Actualité</a>
             <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
-        <div class="header-right">
+                <div class="header-right">
+            <a href="assets/CV_Aude_Desperies.pdf" class="cv-button" target="_blank" rel="noopener noreferrer" aria-label="Consulter mon CV">
+                <span data-i18n="nav.cv">CV</span>
+            </a>
+
             <div class="language-menu-container">
                 <button class="language-logo-button" type="button" aria-label="Changer la langue">
-                    <img src="assets/images/langue.png" alt="">
+                    <img src="assets/images/langue.png" data-light-src="assets/images/langue.png" data-dark-src="assets/images/langue1.jpeg" alt="" class="langue-toggle-img">
                 </button>
 
                 <div class="language-menu">
                     <button type="button" data-set-lang="fr">Français</button>
                     <button type="button" data-set-lang="en">English</button>
+                    <div class="theme-toggle-container">
+                        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Basculer le mode jour/nuit" title="Mode jour / nuit">
+                            <img src="assets/images/jour-nuit.jpeg" alt="Mode jour / nuit" class="theme-toggle-img">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +175,7 @@
 
 
             <div class="about-small-image">
-                <img src="assets/images/langue.png" alt="Portrait secondaire de Aude">
+                <img src="assets/images/langue.png" data-light-src="assets/images/langue.png" data-dark-src="assets/images/langue1.jpeg" alt="Illustration langue" width="736" height="732" class="langue-toggle-img">
             </div>
             <div class="about-text-block">
                 <p data-i18n="about.text.1">
@@ -177,115 +204,10 @@
 
         </section>
 
-
-        <!-- PHRASE -->
-        <section class="content-section phrase-section">
-            <h2 data-i18n="phrase.main">
-                Imaginer des objets, des systèmes et des expériences à la croisée de l’art,
-                de la technique et des usages humains.
-            </h2>
-        </section>
-
-        <!-- BOUTONS PROJETS -->
-        <section class="content-section" id="projets">
-            <p class="section-label" data-i18n="projects.label"> Projets</p>
-
-            <div class="project-grid">
-                <a href="pages/ocean-imprints.html" class="project-card">
-                    <span>01</span>
-                    <h3>Ocean Imprints</h3>
-                    <p data-i18n="category.school">École</p>
-                </a>
-
-                <a href="pages/photographie.html" class="project-card">
-                    <span>02</span>
-                    <h3>Photographie</h3>
-                    <p data-i18n="category.creation">Creation</p>
-                </a>
-
-                <a href="pages/veloute.html" class="project-card">
-                    <span>03</span>
-                    <h3>VeloutÉ</h3>
-                    <p data-i18n="category.adventure">Aventure</p>
-                </a>
-
-                <a href="pages/hma.html" class="project-card">
-                    <span>04</span>
-                    <h3>HMA</h3>
-                    <p data-i18n="category.school">École</p>
-                </a>
-
-                <a href="pages/mission-martinique.html" class="project-card">
-                    <span>05</span>
-                    <h3>Martinique</h3>
-                    <p data-i18n="category.adventure">Aventure</p>
-                </a>
-
-                <a href="pages/surfboard.html" class="project-card">
-                    <span>06</span>
-                    <h3>SurfBoard</h3>
-                    <p data-i18n="category.creation">Creation</p>
-                </a>
-
-                <a href="pages/projet-pix.html" class="project-card">
-                    <span>07</span>
-                    <h3>Projet Pix</h3>
-                    <p data-i18n="category.school">École</p>
-                </a>
-
-                <a href="pages/orika-design.html" class="project-card">
-                    <span>08</span>
-                    <h3>Orika</h3>
-                    <p data-i18n="category.creation">Creation</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- PARCOURS -->
-        <section class="content-section" id="parcours">
-            <p class="section-label" data-i18n="path.label">Parcours</p>
-            <div class="timeline-grid">
-                <div class="timeline-card">
-                    <span class="timeline-number">01</span>
-                    <h3>2019 — 2022</h3>
-                    <h4 data-i18n="path.1.subtitle">Fondations</h4>
-                    <p data-i18n="path.1.text">
-                        Formation scientifique, acquisition des bases en mathématiques,
-                        physique et raisonnement technique.
-                    </p>
-                </div>
-
-                <div class="timeline-card">
-                    <span class="timeline-number">02</span>
-                    <h3>2022 — 2025</h3>
-                    <h4 data-i18n="path.2.subtitle">Cycle ingénieur</h4>
-                    <p data-i18n="path.2.text">
-                        Cycle ingénieur, projets interdisciplinaires, design, prototypage,
-                        programmation et innovation.
-                    </p>
-                </div>
-
-                <div class="timeline-card">
-                    <span class="timeline-number">03</span>
-                    <h3 data-i18n="path.3.title">2026 - Aujourd'hui</h3>
-                    <h4 data-i18n="path.3.subtitle">Exploration</h4>
-                    <p data-i18n="path.3.text">
-                        Stage, recherche appliquée, projets environnementaux,
-                        design expérimental et systèmes connectés.
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <!-- ACTUALITÉ -->
         <section class="news-editorial-section" id="apropos">
             <div class="news-title">
                 <h2 data-i18n="news.title">découverte du moment</h2>
-            </div>
-
-            <div class="news-intro">
-                <h3 data-i18n="news.subtitle">ce que j’explore en Master 2</h3>
-                <div class="news-horizontal-arrow"></div>
             </div>
 
             <div class="news-text">
@@ -307,12 +229,311 @@
         </section>
 
 
+        <!-- PHRASE -->
+        <section class="content-section phrase-section">
+            <h2 data-i18n="phrase.main">
+                Imaginer des objets, des systèmes et des expériences à la croisée de l’art,
+                de la technique et des usages humains.
+            </h2>
+        </section>
+
+                                <!-- BOUTONS PROJETS -->
+        <section class="content-section" id="projets">
+            <p class="section-label" data-i18n="projects.label">Projets</p>
+
+            <div class="project-grid">
+                <!-- 01 : Martinique (Ligne 1 - Photo directement visible) -->
+                <a href="pages/mission-martinique.html" class="project-card project-card--featured">
+                    <div class="project-card-header">
+                        <span class="project-card-number">01</span>
+                        <span class="project-card-arrow" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-card-media">
+                        <img src="assets/images/martinique_home.jpg" alt="Aperçu Field Notes" loading="lazy">
+                    </div>
+                    <div class="project-card-meta">
+                        <h3 class="project-card-title">Field Notes</h3>
+                        <p class="project-card-sub" data-i18n="project.1.meta">Stage en Martinique</p>
+                    </div>
+                </a>
+
+                <!-- 02 : AI Lab (Ligne 1 - Photo directement visible) -->
+                <a href="pages/ai-lab.html" class="project-card project-card--featured">
+                    <div class="project-card-header">
+                        <span class="project-card-number">02</span>
+                        <span class="project-card-arrow" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-card-media">
+                        <img src="assets/images/ia_home.jpg" alt="Aperçu AI Lab" loading="lazy">
+                    </div>
+                    <div class="project-card-meta">
+                        <h3 class="project-card-title">AI Lab</h3>
+                        <p class="project-card-sub" data-i18n="project.2.meta">Système génératif</p>
+                    </div>
+                </a>
+
+                <!-- 03 : Ocean Imprints (Ligne 1 - Photo directement visible) -->
+                <a href="pages/ocean-imprints.html" class="project-card project-card--featured">
+                    <div class="project-card-header">
+                        <span class="project-card-number">03</span>
+                        <span class="project-card-arrow" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-card-media">
+                        <img src="assets/images/ocean_imprints_home.png" alt="Aperçu Ocean Imprints" loading="lazy">
+                    </div>
+                    <div class="project-card-meta">
+                        <h3 class="project-card-title">Ocean Imprints</h3>
+                        <p class="project-card-sub" data-i18n="project.3.meta">Recherche sur les matériaux</p>
+                    </div>
+                </a>
+
+                <!-- 04 : HMA (Ligne 2 - 4 photos au survol) -->
+                <a href="pages/hma.html" class="project-card project-card--hover-reveal">
+                    <div class="project-card-hover-gallery" aria-hidden="true">
+                        <div class="project-card-hover-thumb"><img src="assets/images/hma-01.jpg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/hma-02.png" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/hma-03.png" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/hma-04.jpeg" alt="" loading="lazy"></div>
+                    </div>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <span class="project-card-number">04</span>
+                            <span class="project-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="project-card-meta">
+                            <h3 class="project-card-title">HMA</h3>
+                            <p class="project-card-sub" data-i18n="project.4.meta">Design mécanique</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 05 : Orika (Ligne 2 - 4 photos au survol) -->
+                <a href="pages/orika-design.html" class="project-card project-card--hover-reveal">
+                    <div class="project-card-hover-gallery" aria-hidden="true">
+                        <div class="project-card-hover-thumb"><img src="assets/images/orika-01.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/hero.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/orika-03.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/orika-04.png" alt="" loading="lazy"></div>
+                    </div>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <span class="project-card-number">05</span>
+                            <span class="project-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="project-card-meta">
+                            <h3 class="project-card-title">Orika</h3>
+                            <p class="project-card-sub" data-i18n="project.5.meta">Design d'objet</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 06 : Projet Pix (Ligne 2 - 4 photos au survol) -->
+                <a href="pages/projet-pix.html" class="project-card project-card--hover-reveal">
+                    <div class="project-card-hover-gallery" aria-hidden="true">
+                        <div class="project-card-hover-thumb"><img src="assets/images/pix-01.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/pix-02.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/pix-03.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/pix-04.jpeg" alt="" loading="lazy"></div>
+                    </div>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <span class="project-card-number">06</span>
+                            <span class="project-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="project-card-meta">
+                            <h3 class="project-card-title">Projet Pix</h3>
+                            <p class="project-card-sub" data-i18n="project.6.meta">Robotique</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 07 : Photographie (Ligne 3 - 4 photos au survol) -->
+                <a href="pages/photographie.html" class="project-card project-card--hover-reveal">
+                    <div class="project-card-hover-gallery" aria-hidden="true">
+                        <div class="project-card-hover-thumb"><img src="assets/images/photo-01.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/photo-02.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/photo-03.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/photo-04.jpeg" alt="" loading="lazy"></div>
+                    </div>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <span class="project-card-number">07</span>
+                            <span class="project-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="project-card-meta">
+                            <h3 class="project-card-title">Photographie</h3>
+                            <p class="project-card-sub" data-i18n="project.7.meta">Photographie</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 08 : Velouté (Ligne 3 - 4 photos au survol) -->
+                <a href="pages/veloute.html" class="project-card project-card--hover-reveal">
+                    <div class="project-card-hover-gallery" aria-hidden="true">
+                        <div class="project-card-hover-thumb"><img src="assets/images/velo-01.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/velo-02.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/velo-03.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/velo-04.png" alt="" loading="lazy"></div>
+                    </div>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <span class="project-card-number">08</span>
+                            <span class="project-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="project-card-meta">
+                            <h3 class="project-card-title">Velouté</h3>
+                            <p class="project-card-sub" data-i18n="project.8.meta">Aventure</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 09 : Surfboard (Ligne 3 - 4 photos au survol) -->
+                <a href="pages/surfboard.html" class="project-card project-card--hover-reveal">
+                    <div class="project-card-hover-gallery" aria-hidden="true">
+                        <div class="project-card-hover-thumb"><img src="assets/images/surf-01.jpg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/surf-02.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/surf-03.jpeg" alt="" loading="lazy"></div>
+                        <div class="project-card-hover-thumb"><img src="assets/images/surf-04.jpeg" alt="" loading="lazy"></div>
+                    </div>
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <span class="project-card-number">09</span>
+                            <span class="project-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                        <div class="project-card-meta">
+                            <h3 class="project-card-title">Surfboard</h3>
+                            <p class="project-card-sub" data-i18n="project.9.meta">Design produit</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+                                <!-- PARCOURS -->
+        <section class="content-section" id="parcours">
+            <p class="section-label" data-i18n="path.label">Parcours</p>
+            <div class="timeline-grid">
+                <!-- 01 : 2019 — 2022 -->
+                <div class="timeline-card">
+                    <div class="timeline-card-main">
+                        <span class="timeline-number">01</span>
+                        <h3>2019 — 2022</h3>
+                        <h4 data-i18n="path.1.subtitle">Fondations</h4>
+                        <p data-i18n="path.1.text">
+                            Formation scientifique, acquisition des bases en mathématiques,
+                            physique et raisonnement technique.
+                        </p>
+                    </div>
+
+                    <div class="timeline-subitems">
+                        <button type="button" class="timeline-subitem-btn" data-modal-key="bac" aria-haspopup="dialog">
+                            <span class="timeline-subitem-label">
+                                <span class="timeline-subitem-index">// 01</span>
+                                <span class="timeline-subitem-title" data-i18n="path.1.sub.1.title">Bac scientifique</span>
+                            </span>
+                            <span class="timeline-subitem-action">
+                                <span class="timeline-subitem-hint" data-i18n="path.modal.open">Détails</span>
+                                <span class="timeline-subitem-arrow" aria-hidden="true">↗</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="timeline-subitem-btn" data-modal-key="prepa" aria-haspopup="dialog">
+                            <span class="timeline-subitem-label">
+                                <span class="timeline-subitem-index">// 02</span>
+                                <span class="timeline-subitem-title" data-i18n="path.1.sub.2.title">Prépa intégrée (ESILV)</span>
+                            </span>
+                            <span class="timeline-subitem-action">
+                                <span class="timeline-subitem-hint" data-i18n="path.modal.open">Détails</span>
+                                <span class="timeline-subitem-arrow" aria-hidden="true">↗</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 02 : 2022 — 2025 -->
+                <div class="timeline-card">
+                    <div class="timeline-card-main">
+                        <span class="timeline-number">02</span>
+                        <h3>2022 — 2025</h3>
+                        <h4 data-i18n="path.2.subtitle">Cycle ingénieur</h4>
+                        <p data-i18n="path.2.text">
+                            Cycle ingénieur, immersion bancaire, prototypage, design interactif
+                            et innovation technologique.
+                        </p>
+                    </div>
+
+                    <div class="timeline-subitems">
+                        <button type="button" class="timeline-subitem-btn" data-modal-key="bnp" aria-haspopup="dialog">
+                            <span class="timeline-subitem-label">
+                                <span class="timeline-subitem-index">// 01</span>
+                                <span class="timeline-subitem-title" data-i18n="path.2.sub.bnp.title">Stage en banque (BNP Paribas)</span>
+                            </span>
+                            <span class="timeline-subitem-action">
+                                <span class="timeline-subitem-hint" data-i18n="path.modal.open">Détails</span>
+                                <span class="timeline-subitem-arrow" aria-hidden="true">↗</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="timeline-subitem-btn" data-modal-key="ct" aria-haspopup="dialog">
+                            <span class="timeline-subitem-label">
+                                <span class="timeline-subitem-index">// 02</span>
+                                <span class="timeline-subitem-title" data-i18n="path.2.sub.ct.title">Majeure Creative Technology</span>
+                            </span>
+                            <span class="timeline-subitem-action">
+                                <span class="timeline-subitem-hint" data-i18n="path.modal.open">Détails</span>
+                                <span class="timeline-subitem-arrow" aria-hidden="true">↗</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 03 : 2026 - Aujourd'hui -->
+                <div class="timeline-card">
+                    <div class="timeline-card-main">
+                        <span class="timeline-number">03</span>
+                        <h3 data-i18n="path.3.title">2026 - Aujourd'hui</h3>
+                        <h4 data-i18n="path.3.subtitle">Exploration</h4>
+                        <p data-i18n="path.3.text">
+                            Stage, recherche appliquée, projets environnementaux,
+                            design expérimental et systèmes connectés.
+                        </p>
+                    </div>
+
+                    <div class="timeline-subitems">
+                        <button type="button" class="timeline-subitem-btn" data-modal-key="ghost" aria-haspopup="dialog">
+                            <span class="timeline-subitem-label">
+                                <span class="timeline-subitem-index">// 01</span>
+                                <span class="timeline-subitem-title" data-i18n="path.3.sub.1.title">Recherche GhostHatch (M2)</span>
+                            </span>
+                            <span class="timeline-subitem-action">
+                                <span class="timeline-subitem-hint" data-i18n="path.modal.open">Détails</span>
+                                <span class="timeline-subitem-arrow" aria-hidden="true">↗</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="timeline-subitem-btn" data-modal-key="avenir" aria-haspopup="dialog">
+                            <span class="timeline-subitem-label">
+                                <span class="timeline-subitem-index">// 02</span>
+                                <span class="timeline-subitem-title" data-i18n="path.3.sub.3.title">Perspectives d'avenir</span>
+                            </span>
+                            <span class="timeline-subitem-action">
+                                <span class="timeline-subitem-hint" data-i18n="path.modal.open">Détails</span>
+                                <span class="timeline-subitem-arrow" aria-hidden="true">↗</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
 
 
 
         <!-- CONTACT -->
         <section class="contact-info-section" id="contact">
-            <p class="section-label" data-i18n="contact.label">Contact</p>
             <div class="contact-info-title">
                 <h2 data-i18n="contact.title">Info!</h2>
             </div>
@@ -338,21 +559,46 @@
                         <p data-i18n="contact.linkedin.text">Profil professionnel</p>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/audetrikay/" class="contact-info-row" target="_blank"
-                    rel="noopener noreferrer">
+                <button type="button" class="contact-info-row contact-share-btn" id="sharePortfolioBtn"
+                    aria-label="Partager le portfolio">
                     <span class="contact-index">03</span>
                     <div>
-                        <h3>Instagram</h3>
-                        <p data-i18n="contact.instagram.text">Création & projets</p>
+                        <h3 data-i18n="contact.share.title">Partager</h3>
+                        <p id="shareStatusText" data-i18n="contact.share.text">Copier le lien du portfolio</p>
                     </div>
-                </a>
+                </button>
             </div>
         </section>
 
+        <!-- MODAL PARCOURS (Petite fenêtre de détails éditoriale) -->
+        <div id="timelineModal" class="timeline-modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="timeline-modal-backdrop" data-close-modal></div>
+            <div class="timeline-modal-dialog">
+                <div class="timeline-modal-header">
+                    <div class="timeline-modal-meta">
+                        <span class="timeline-modal-period" id="modalPeriod"></span>
+                        <span class="timeline-modal-tag" id="modalTag"></span>
+                    </div>
+                    <button type="button" class="timeline-modal-close" data-close-modal aria-label="Fermer la fenêtre">
+                        <span aria-hidden="true">✕</span>
+                    </button>
+                </div>
+                <div class="timeline-modal-body">
+                    <h3 class="timeline-modal-title" id="modalTitle"></h3>
+                    <p class="timeline-modal-detail" id="modalDetail"></p>
+                    <div class="timeline-modal-tags" id="modalTags"></div>
+                </div>
+                <div class="timeline-modal-footer">
+                    <button type="button" class="timeline-modal-dismiss-btn" data-close-modal>
+                        <span data-i18n="path.modal.close">Fermer ✕</span>
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20"></script>
 </body>
 
 </html>
