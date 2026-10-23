@@ -409,6 +409,15 @@ a {
    SECTIONS GÉNÉRALES
 ========================================================= */
 
+#projets,
+#accueil,
+#about-me,
+#apropos,
+#parcours,
+#contact {
+  scroll-margin-top: 84px;
+}
+
 .content-section {
   min-height: 90vh;
   padding: 80px 50px 60px;
@@ -2141,6 +2150,15 @@ button.contact-info-row {
     margin: 8px auto 0;
   }
 
+  #projets,
+  #accueil,
+  #about-me,
+  #apropos,
+  #parcours,
+  #contact {
+    scroll-margin-top: 72px;
+  }
+
   /* --- 4. SECTION, GRILLE ET CARTES PROJETS --- */
   .content-section#projets,
   #projets.content-section,
@@ -2455,6 +2473,16 @@ button.contact-info-row {
   }
 
   /* --- 9. PAGES DE DÉTAIL PROJET --- */
+  .back-projects-btn {
+    padding: 6px 8px;
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  .back-projects-img {
+    height: 20px;
+  }
+
   .project-detail-page {
     padding-top: 64px;
   }
@@ -2689,34 +2717,87 @@ body,
 }
 
 /* =========================================================
-   MENU DES PAGES PROJETS (TOUJOURS NOIR PUR)
+   BOUTON RETOUR VERS PROJETS & MENU DES PAGES PROJETS
 ========================================================= */
 
-.project-page .top-header,
-body:has(.project-detail-page) .top-header,
-body:has(.photo-page) .top-header {
+.back-projects-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  min-height: 44px;
+  min-width: 44px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.back-projects-btn:hover {
+  transform: translateX(-4px);
+  opacity: 0.8;
+}
+
+.back-projects-btn:active {
+  transform: translateX(-6px) scale(0.96);
+}
+
+.back-projects-img {
+  height: 22px;
+  width: auto;
+  aspect-ratio: 416 / 201;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
+  transition: transform 0.25s ease;
+}
+
+[data-theme="dark"] .back-projects-img,
+.theme-dark .back-projects-img {
+  mix-blend-mode: screen;
+}
+
+/* En mode sombre sur les pages projets : header noir pur et textes blancs */
+[data-theme="dark"] .project-page .top-header,
+[data-theme="dark"] body:has(.project-detail-page) .top-header,
+[data-theme="dark"] body:has(.photo-page) .top-header,
+.theme-dark .project-page .top-header,
+.theme-dark body:has(.project-detail-page) .top-header,
+.theme-dark body:has(.photo-page) .top-header {
   background: #050505 !important;
   color: #ffffff !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: none !important;
 }
 
-.project-page .top-header *,
-body:has(.project-detail-page) .top-header *,
-body:has(.photo-page) .top-header * {
+[data-theme="dark"] .project-page .top-header *,
+[data-theme="dark"] body:has(.project-detail-page) .top-header *,
+[data-theme="dark"] body:has(.photo-page) .top-header *,
+.theme-dark .project-page .top-header *,
+.theme-dark body:has(.project-detail-page) .top-header *,
+.theme-dark body:has(.photo-page) .top-header * {
   color: #ffffff !important;
 }
 
-.project-page .top-header .cv-button,
-body:has(.project-detail-page) .top-header .cv-button,
-body:has(.photo-page) .top-header .cv-button {
+[data-theme="dark"] .project-page .top-header .cv-button,
+[data-theme="dark"] body:has(.project-detail-page) .top-header .cv-button,
+[data-theme="dark"] body:has(.photo-page) .top-header .cv-button,
+.theme-dark .project-page .top-header .cv-button,
+.theme-dark body:has(.project-detail-page) .top-header .cv-button,
+.theme-dark body:has(.photo-page) .top-header .cv-button {
   border-color: #ffffff !important;
   color: #ffffff !important;
 }
 
-.project-page .top-header .cv-button:hover,
-body:has(.project-detail-page) .top-header .cv-button:hover,
-body:has(.photo-page) .top-header .cv-button:hover {
+[data-theme="dark"] .project-page .top-header .cv-button:hover,
+[data-theme="dark"] body:has(.project-detail-page) .top-header .cv-button:hover,
+[data-theme="dark"] body:has(.photo-page) .top-header .cv-button:hover,
+.theme-dark .project-page .top-header .cv-button:hover,
+.theme-dark body:has(.project-detail-page) .top-header .cv-button:hover,
+.theme-dark body:has(.photo-page) .top-header .cv-button:hover {
   background: #ffffff !important;
   color: #050505 !important;
 }

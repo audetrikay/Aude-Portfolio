@@ -5,6 +5,7 @@ const translations = {
     "theme.toggle.night": "Mode nuit actif (cliquer pour passer en mode jour)",
     "nav.cv": "CV",
     "nav.cv.full": "Télécharger mon CV (PDF)",
+    "nav.back.projects": "Retour aux projets",
     "path.modal.open": "Détails",
     "path.modal.close": "Fermer ✕",
 
@@ -23,7 +24,7 @@ const translations = {
     "path.3.sub.2.title": "Résilience & IoT (Martinique)",
     "path.3.sub.2.detail": "Conception et déploiement de capteurs IoT, stations météorologiques solaires autonomes et observatoire web au service de la collectivité du Lamentin.",
     "path.3.sub.3.title": "Perspectives d'avenir",
-    "path.3.sub.3.detail": "Ingénierie de conception R&D, systèmes connectés, technologie durable et projets à fort impact environnemental et humain.",
+    "path.3.sub.3.detail": "J’aspire à mettre ma créativité et mes compétences d’ingénieure au service de projets concrets, utiles et engagés, au plus près du terrain, des enjeux environnementaux et des réalités humaines.",
     "nav.home": "ACCUEIL",
     "nav.projects": "PROJETS",
     "nav.path": "PARCOURS",
@@ -210,6 +211,7 @@ const translations = {
         "a11y.skip": "Skip to main content",
     "nav.cv": "CV",
     "nav.cv.full": "Download Resume (PDF)",
+    "nav.back.projects": "Back to projects",
     "path.modal.open": "Details",
     "path.modal.close": "Close ✕",
 
@@ -228,7 +230,7 @@ const translations = {
     "path.3.sub.2.title": "Territorial Resilience & IoT (Martinique)",
     "path.3.sub.2.detail": "Design and field deployment of IoT sensors, autonomous solar weather stations, and web observatory for the City of Le Lamentin.",
     "path.3.sub.3.title": "Career Aspirations",
-    "path.3.sub.3.detail": "R&D design engineering, connected systems, sustainable innovation, and high-impact technology projects.",
+    "path.3.sub.3.detail": "I aspire to dedicate my creativity and engineering skills to concrete, meaningful, and committed projects, closely connected to the field, environmental challenges, and human realities.",
     "nav.home": "HOME",
     "nav.projects": "PROJECTS",
     "nav.path": "PATH",
@@ -484,14 +486,14 @@ const timelineModalData = {
   avenir: {
     period: "2026 — Aujourd'hui",
     tag: { fr: "VISION PROFESSIONNELLE", en: "CAREER VISION" },
-    title: { fr: "Perspectives d'avenir", en: "Future Prospects" },
+    title: { fr: "Perspectives d'avenir", en: "Career Aspirations" },
     detail: {
-      fr: "Recherche d'opportunités en ingénierie de conception R&D, innovation technologique hardware & software, systèmes connectés et projets durables à fort impact environnemental et humain.",
-      en: "Seeking opportunities in R&D design engineering, hardware & software technological innovation, connected systems, and sustainable projects with high environmental and human impact."
+      fr: "J’aspire à mettre ma créativité et mes compétences d’ingénieure au service de projets concrets, utiles et engagés, au plus près du terrain, des enjeux environnementaux et des réalités humaines.",
+      en: "I aspire to dedicate my creativity and engineering skills to concrete, meaningful, and committed projects, closely connected to the field, environmental challenges, and human realities."
     },
     pills: {
-      fr: ["Ingénierie R&D", "Innovation Hardware & Soft", "Technologies Durables", "Impact"],
-      en: ["R&D Engineering", "Hardware & Software Innovation", "Sustainable Tech", "Impact"]
+      fr: ["Ingénierie R&D", "Créativité & Terrain", "Enjeux Environnementaux", "Réalités Humaines"],
+      en: ["R&D Engineering", "Field & Creativity", "Environmental Challenges", "Human Realities"]
     }
   }
 };
@@ -573,6 +575,14 @@ function applyLanguage(lang) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+    const key = element.dataset.i18nTitle;
+    if (dictionary[key]) {
+      element.setAttribute("title", dictionary[key]);
+      element.setAttribute("aria-label", dictionary[key]);
+    }
+  });
+
   document.querySelectorAll("[data-set-lang]").forEach((button) => {
     button.classList.toggle("active", button.dataset.setLang === lang);
   });
@@ -599,12 +609,17 @@ function applyTheme(theme) {
     metaColorScheme.setAttribute("content", isDark ? "dark" : "light");
   }
 
-  // Les images langue deviennent langue 1 en mode nuit (et restent toujours langue 1 dans les pages projets)
+  // Bascule des flèches retour sur les pages projets (fleche.jpg en jour, fleche1.png en nuit)
+  document.querySelectorAll(".back-projects-img").forEach((img) => {
+    const targetSrc = isDark ? img.dataset.darkSrc : img.dataset.lightSrc;
+    if (targetSrc && img.getAttribute("src") !== targetSrc) {
+      img.setAttribute("src", targetSrc);
+    }
+  });
+
+  // Les images langue deviennent langue 1 en mode nuit
   document.querySelectorAll(".langue-toggle-img").forEach((img) => {
-    const isProjectPage = document.body && document.body.classList.contains("project-page");
-    const targetSrc = isProjectPage
-      ? (img.dataset.darkSrc || img.dataset.lightSrc)
-      : (isDark ? img.dataset.darkSrc : img.dataset.lightSrc);
+    const targetSrc = isDark ? img.dataset.darkSrc : img.dataset.lightSrc;
     if (targetSrc && img.getAttribute("src") !== targetSrc) {
       img.setAttribute("src", targetSrc);
     }
