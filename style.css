@@ -1926,17 +1926,17 @@ button.contact-info-row {
     align-items: center;
     gap: 6px;
     background: transparent;
-    border: 1.5px solid #050505;
-    border-radius: 999px;
-    padding: 6px 13px;
+    border: none;
+    border-radius: 0;
+    padding: 6px 0;
     color: #050505;
     font-family: "Inter", sans-serif;
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: opacity 0.2s ease;
     min-height: 36px;
     -webkit-tap-highlight-color: transparent;
   }
@@ -1953,8 +1953,8 @@ button.contact-info-row {
   }
 
   .mobile-portfolio-button:active {
-    transform: scale(0.97);
-    background: rgba(0, 0, 0, 0.06);
+    opacity: 0.55;
+    background: transparent;
   }
 
   .cv-button {
@@ -3252,13 +3252,14 @@ body[data-theme="dark"] {
 
   [data-theme="dark"] .mobile-portfolio-button,
   .theme-dark .mobile-portfolio-button {
-    border-color: rgba(255, 255, 255, 0.35) !important;
+    border: none !important;
     color: #ffffff !important;
   }
 
   [data-theme="dark"] .mobile-portfolio-button:active,
   .theme-dark .mobile-portfolio-button:active {
-    background: rgba(255, 255, 255, 0.12) !important;
+    opacity: 0.55;
+    background: transparent !important;
   }
 
   [data-theme="dark"] .project-card:active,
@@ -3275,7 +3276,7 @@ body[data-theme="dark"] {
   body:has(.project-detail-page) .mobile-portfolio-button,
   body:has(.photo-page) .mobile-portfolio-button,
   .project-page .mobile-portfolio-button {
-    border-color: rgba(255, 255, 255, 0.35) !important;
+    border: none !important;
     color: #ffffff !important;
   }
 
