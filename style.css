@@ -2748,16 +2748,10 @@ body,
 .back-projects-img {
   height: 22px;
   width: auto;
-  aspect-ratio: 416 / 201;
+  aspect-ratio: 1541 / 523;
   object-fit: contain;
   display: block;
-  mix-blend-mode: multiply;
   transition: transform 0.25s ease;
-}
-
-[data-theme="dark"] .back-projects-img,
-.theme-dark .back-projects-img {
-  mix-blend-mode: screen;
 }
 
 /* En mode sombre sur les pages projets : header noir pur et textes blancs */
